@@ -20,6 +20,9 @@ def getDatasetFromUrl() -> pd.DataFrame:
     df = formatDataset(df)
     return df
 
+# TODO Normalizar el dataset, obteniendo la informacion que mas nos sirva y clasificandolo
+# segun el documento del genotipo
+
 
 def formatDataset(df: pd.DataFrame) -> pd.DataFrame:
     return df
