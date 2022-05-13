@@ -18,17 +18,17 @@ def getPoblacionInicial(dataset: DataFrame, tamano_poblacion: int = 10) -> DataF
     return dataset.sample(tamano_poblacion)
 
 
-def criterioDeParo(poblacion: DataFrame, criterioDeParo: CriterioDeParo) -> bool:
+def criterioDeParo(poblacion: DataFrame, criterioDeParo: CriterioDeParo = None) -> bool:
     return True
 
 
-def seleccion(poblacion: DataFrame, criterioSeleccion: CriterioSeleccion):
+def seleccion(poblacion: DataFrame, criterioSeleccion: CriterioSeleccion = None):
     return poblacion
 
 
-def cruzamiento(poblacion: DataFrame, criterioCruzamiento: CriterioCruzamiento):
+def cruzamiento(poblacion: DataFrame, criterioCruzamiento: CriterioCruzamiento = None):
     return poblacion
 
 
-def mutacion(poblacion: DataFrame, criterioMutacion: CriterioMutacion):
+def mutacion(poblacion: DataFrame, criterioMutacion: CriterioMutacion = None):
     return poblacion

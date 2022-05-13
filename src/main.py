@@ -11,9 +11,9 @@ if __name__ == "__main__":
     poblacion: DataFrame = getPoblacionInicial(getDataset())
 
     while True:
-        poblacion = seleccion(poblacion, None)
-        poblacion = cruzamiento(poblacion, None)
-        poblacion = mutacion(poblacion, None)
+        poblacion = seleccion(poblacion)
+        poblacion = cruzamiento(poblacion)
+        poblacion = mutacion(poblacion)
         if(criterioDeParo(poblacion)):
             break
     print(poblacion)
