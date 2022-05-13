@@ -8,7 +8,7 @@ Algoritmo Genetico para la materia IA sobre libros
 2. Configurar variables
    - Crear archivo _.env_ en el root del proyecto para setear variables
      - DATA_FILENAME: Setear el nombre del archivo dataset
-     - DATA*DIR: El path al directorio desde el root donde estara guardado el dataset. \_El directorio debe existir antes de correr el programa.*
+     - DATA\*DIR: El path al directorio desde el root donde estara guardado el dataset. **El directorio debe existir antes de correr el programa.**
      - DATASET_URL: La url de donde se baja el dataset
 3. Ejecutar el archivo main.py. Este te baja el dataset si no lo tenes descargado, si encuentra el archivo usa ese. Luego ejecuta los pasos basicos del algoritmo, por ahora simplificado.
 
