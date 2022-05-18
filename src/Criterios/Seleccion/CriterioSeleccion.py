@@ -1,4 +1,5 @@
 from abc import abstractmethod
+from ast import Return
 import math
 import numpy as np
 from pandas import DataFrame
@@ -14,10 +15,8 @@ from FuncionAptitud import FuncionAptitud
 
 class CriterioSeleccion:
 
-    # subgrupo_minimo: int es el numero minimo de individuos que debe tener un subgrupo
     # fraccionamiento: float es la fraccion de individuos que se eligen del subgrupo final
-    def __init__(self, subgrupo_minimo=2, fraccionamiento=0.1) -> None:
-        self.subgrupo_minimo: int = subgrupo_minimo
+    def __init__(self,  fraccionamiento=0.1) -> None:
         self.fraccionamiento: float = fraccionamiento
 
     @abstractmethod
@@ -27,8 +26,8 @@ class CriterioSeleccion:
 
 class Torneo(CriterioSeleccion):
 
-    def __init__(self, subgrupo_minimo=2, fraccionamiento=0.1) -> None:
-        super().__init__(subgrupo_minimo, fraccionamiento)
+    def __init__(self,  fraccionamiento=0.1) -> None:
+        super().__init__(fraccionamiento)
 
     def seleccionar(self, poblacion: DataFrame) -> DataFrame:
         return poblacion.sample(frac=self.fraccionamiento)
@@ -36,20 +35,13 @@ class Torneo(CriterioSeleccion):
 
 class Ranking(CriterioSeleccion):
 
-    def __init__(self, subgrupo_minimo=2, fraccionamiento=0.1) -> None:
-        super().__init__(subgrupo_minimo, fraccionamiento)
+    def __init__(self, fraccionamiento=0.1) -> None:
+        super().__init__(fraccionamiento)
 
-    def seleccionar(self, poblacion: DataFrame) -> DataFrame:
-        # Separa la poblacion en subgrupos
-        subgrupos = poblacion.groupby(
-            np.arange(len(poblacion)) // self.subgrupo_minimo)
-        df = DataFrame()
-        for name, subgrupo in subgrupos:
-            # Ordena los subgrupos por el valor de la funcion aptitud
-            subgrupo["aptitud"] = FuncionAptitud().evaluar(subgrupo)
-            subgrupo.sort_values(by=['aptitud'], ascending=False, inplace=True)
-            # Selecciona el subgrupo final priorizando los mejores
-            tamanio = math.ceil(len(subgrupo)*self.fraccionamiento)
-            df = df.append(subgrupo.iloc[:tamanio])
-        # une todos los subgrupos del pandas groupby
-        return df
+    def seleccionar(self, subgrupo: DataFrame) -> DataFrame:
+        # Ordena al subgrupo por el valor de la funcion aptitud
+        subgrupo["aptitud"] = FuncionAptitud().evaluar(subgrupo)
+        subgrupo.sort_values(by=['aptitud'], ascending=False, inplace=True)
+        # Selecciona el subgrupo final priorizando los mejores
+        tamanio = math.ceil(len(subgrupo)*self.fraccionamiento)
+        return subgrupo.iloc[:tamanio]

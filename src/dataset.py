@@ -39,6 +39,7 @@ def formatDataset(df: DataFrame) -> DataFrame:
     # ID as rowNumber
     df["ID"] = df.index
     df["generos"] = np.vectorize(formatGeneros)(df["generos"])
+    df["aptitud"] = 0
 
     return df
 

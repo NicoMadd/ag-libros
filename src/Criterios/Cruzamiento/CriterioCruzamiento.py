@@ -1,4 +1,4 @@
-from pandas import DataFrame
+from pandas import DataFrame, Series
 
 # TODO Definir un tipo de CriterioCruzamiento
 
@@ -10,5 +10,10 @@ from pandas import DataFrame
 
 
 class CriterioCruzamiento:
-    def cruza(self, poblacion: DataFrame) -> DataFrame:
-        return poblacion
+    def cruzar(self, individuo_1: Series, individuo_2: Series) -> DataFrame:
+        return individuo_1
+
+
+class CruzaSimple(CriterioCruzamiento):
+    def cruzar(self, individuo_1: Series, individuo_2: Series) -> DataFrame:
+        return individuo_1

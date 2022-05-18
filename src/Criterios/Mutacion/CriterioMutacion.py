@@ -1,4 +1,4 @@
-from pandas import DataFrame
+from pandas import DataFrame, Series
 
 
 # TODO Definir un tipo de CriterioMutacion
@@ -10,5 +10,13 @@ from pandas import DataFrame
 # Descendente
 
 class CriterioMutacion:
-    def mutar(self, poblacion: DataFrame) -> DataFrame:
-        return poblacion
+    def mutar(self, individuo: list) -> DataFrame:
+        return individuo
+
+
+class MutaSimple(CriterioMutacion):
+    def mutar(self, individuo: DataFrame, dataset: DataFrame) -> DataFrame:
+        # set titulo a Mutado
+        return dataset.sample(n=1)
+        # individuo["titulo"] = "Mutado"
+        # return individuo
