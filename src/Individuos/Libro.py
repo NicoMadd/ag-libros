@@ -1,5 +1,10 @@
 # TODO Definir Libro
-class Libro:
+
+from Individuos.Individuo import Individuo
+
+
+class Libro(Individuo):
+
     def __init__(self, titulo, autor, numero_paginas):
         self.titulo = titulo
         self.autor = autor

@@ -4,16 +4,21 @@
 import numpy as np
 import pandas as pd
 from pandas import DataFrame
+from Criterios.Seleccion.CriterioSeleccion import Ranking
 from dataset import getDataset
-from ag import getPoblacionInicial, criterioDeParo, cruzamiento, mutacion, seleccion
+from AG import AG
+from FuncionAptitud import FuncionAptitud
+
+algoritmoGenetico: AG = AG()
+algoritmoGenetico.setCriterioSeleccion(
+    Ranking(subgrupo_minimo=2, fraccionamiento=0.5))
 
 if __name__ == "__main__":
-    poblacion: DataFrame = getPoblacionInicial(getDataset())
-
+    poblacion: DataFrame = algoritmoGenetico.getPoblacionInicial(getDataset())
     while True:
-        poblacion = seleccion(poblacion)
-        poblacion = cruzamiento(poblacion)
-        poblacion = mutacion(poblacion)
-        if(criterioDeParo(poblacion)):
+        poblacion = algoritmoGenetico.seleccion(poblacion)
+        poblacion = algoritmoGenetico.cruzamiento(poblacion)
+        poblacion = algoritmoGenetico.mutacion(poblacion)
+        if(algoritmoGenetico.criterioDeParo(poblacion)):
             break
     print(poblacion)
