@@ -2,6 +2,7 @@
 
 
 import pandas as pd
+from pandas import DataFrame
 import numpy as np
 import os
 from dotenv import load_dotenv
@@ -15,7 +16,7 @@ DATA_FILENAME = os.getenv("DATA_FILENAME")
 DATA_FILE_PATH = f'{DATA_DIR}/{DATA_FILENAME}'
 
 
-def getDatasetFromUrl() -> pd.DataFrame:
+def getDatasetFromUrl() -> DataFrame:
     df = pd.read_csv(DATASET_URL)
     df = formatDataset(df)
     return df
@@ -24,11 +25,25 @@ def getDatasetFromUrl() -> pd.DataFrame:
 # segun el documento del genotipo
 
 
-def formatDataset(df: pd.DataFrame) -> pd.DataFrame:
+# if genero is NULL then return Nan else return genero
+def formatGeneros(generos: str):
+    return np.NaN if "NULL" in generos else generos
+
+
+def formatDataset(df: DataFrame) -> DataFrame:
+
+    df.drop(columns=['bookId'], inplace=True, axis=1)
+    df.rename(inplace=True, columns={
+              'title': 'titulo', 'author': 'autor', 'rating': 'calificacion', 'genres': 'generos', 'publisher': 'publicador', 'likedPercentage': 'porcentaje de aprobacion'})
+
+    # ID as rowNumber
+    df["ID"] = df.index
+    df["generos"] = np.vectorize(formatGeneros)(df["generos"])
+
     return df
 
 
-def getDataset() -> pd.DataFrame:
+def getDataset() -> DataFrame:
     if os.path.exists(DATA_FILE_PATH):
         df = read_csv(DATA_FILE_PATH)
         df = formatDataset(df)
@@ -36,3 +51,11 @@ def getDataset() -> pd.DataFrame:
         df = getDatasetFromUrl()
         df.to_csv(DATA_FILE_PATH, index=False)
     return df
+
+
+if __name__ == "__main__":
+    poblacion: DataFrame = getDataset()
+    # print(poblacion.head())
+    filtered = poblacion
+    print(filtered.head())
+    print("size:", filtered.size)

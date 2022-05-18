@@ -9,12 +9,13 @@ from Criterios.Seleccion.CriterioSeleccion import CriterioSeleccion
 from Criterios.Cruzamiento.CriterioCruzamiento import CriterioCruzamiento
 from Criterios.Mutacion.CriterioMutacion import CriterioMutacion
 from Criterios.Paro.CriterioDeParo import CriterioDeParo
+from Criterios.PoblacionInicial.CriterioPoblacionInicial import CriterioPoblacionInicial
 
 # TODO Definir una seleccion inicial. La actual me parece bien, hay que ver si se adapta a la
 # teoria.
 
 
-def getPoblacionInicial(dataset: DataFrame, tamano_poblacion: int = 10) -> DataFrame:
+def getPoblacionInicial(dataset: DataFrame, tamano_poblacion: int = 10, criterioPoblacionInicial: CriterioPoblacionInicial = None) -> DataFrame:
     return dataset.sample(tamano_poblacion)
 
 
