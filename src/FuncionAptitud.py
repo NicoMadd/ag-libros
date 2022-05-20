@@ -35,4 +35,5 @@ class FuncionAptitud:
         self.porcentaje_aprobacion = porcentaje_aprobacion
 
     def evaluar(self, individuo: Series) -> float:
-        return individuo.generos.str.count(pat="a")
+        # Menos letras mayor puntaje, mas letras peor puntaje
+        return individuo.titulo.str.len()

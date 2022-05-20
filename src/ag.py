@@ -46,11 +46,23 @@ class AG:
         # Separa la poblacion en subgrupos
         subgrupos = poblacion.groupby(
             np.arange(len(poblacion)) // self.tamanio_subgrupo)
+
+        print("Subgrupos: ", len(subgrupos))
+        print("Poblacion inicial: ", poblacion.shape[0])
+
         df = DataFrame()
         for _, subgrupo in subgrupos:
             subgrupo = self.criterio_seleccion.seleccionar(subgrupo)
+            # best = subgrupo.iloc[0][["titulo", "aptitud"]].to_dict()
+            # print("Mejor Subgrupo: ", best)
+
             df = pd.concat([df, subgrupo])
         # Validar que los elegidos sean libros existentes TODO
+        # df.sort_values(by="aptitud", ascending=False, inplace=True)
+        # best = df.iloc[0][["titulo", "aptitud"]].to_dict()
+        # print("Mejor Final: ", best)
+        print("Poblacion Final: ", df.shape[0])
+
         return df
 
     def cruzamiento(self, poblacion: DataFrame) -> DataFrame:
@@ -78,7 +90,7 @@ class AG:
                     individuo, self.dataset)
                 poblacion.iloc[i] = individuo
                 mutaciones += 1
-        # print("Mutaciones: ", mutaciones)
+        print("Mutaciones: ", mutaciones)
         return poblacion
 
     def setCriterioSeleccion(self, criterio_seleccion: CriterioSeleccion):

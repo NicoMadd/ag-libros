@@ -43,5 +43,8 @@ class Ranking(CriterioSeleccion):
         subgrupo["aptitud"] = FuncionAptitud().evaluar(subgrupo)
         subgrupo.sort_values(by=['aptitud'], ascending=False, inplace=True)
         # Selecciona el subgrupo final priorizando los mejores
+        # best = subgrupo.iloc[0][["titulo", "aptitud"]].to_dict()
         tamanio = math.ceil(len(subgrupo)*self.fraccionamiento)
+        # print("mejor aptitud", best["aptitud"], "individuos en subgrupo", len(
+        #     subgrupo), "ganadores", tamanio)
         return subgrupo.iloc[:tamanio]
