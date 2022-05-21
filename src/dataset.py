@@ -1,11 +1,13 @@
 # Este archivo prepara el dataset para el algoritmo genetico
 
 
+import json
 import pandas as pd
 from pandas import DataFrame
 import numpy as np
 import os
 from dotenv import load_dotenv
+from GoogleAPI import GoogleBooksAPI
 from utils import read_csv
 
 load_dotenv()
@@ -54,8 +56,15 @@ def getDataset() -> DataFrame:
 
 
 if __name__ == "__main__":
-    poblacion: DataFrame = getDataset()
-    # print(poblacion.head())
-    filtered = poblacion
-    print(filtered.head())
-    print("size:", filtered.size)
+    # df = getDatasetFromUrl()
+    df = getDataset()
+    # df.to_csv(DATA_FILE_PATH, index=False)
+    print(df.head())
+    print("size:", df.shape[0])
+
+    one = df.iloc[0]
+    api = GoogleBooksAPI()
+    api.addTitulo(one['titulo']).addAutor(
+        one['autor'])
+    book = api.getBook()
+    print(json.dumps(book, indent=4))
