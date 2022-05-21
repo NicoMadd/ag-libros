@@ -11,9 +11,6 @@ from Criterios.Mutacion.CriterioMutacion import CriterioMutacion, MutaSimple
 from Criterios.Paro.CriterioDeParo import CriterioDeParo
 from Criterios.PoblacionInicial.CriterioPoblacionInicial import AlAzar, CriterioPoblacionInicial
 
-# TODO Definir una seleccion inicial. La actual me parece bien, hay que ver si se adapta a la
-# teoria.
-
 
 class AG:
 

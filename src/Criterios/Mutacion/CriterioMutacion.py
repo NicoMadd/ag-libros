@@ -10,7 +10,7 @@ from pandas import DataFrame, Series
 # Descendente
 
 class CriterioMutacion:
-    def mutar(self, individuo: list) -> DataFrame:
+    def mutar(self, individuo: DataFrame) -> DataFrame:
         return individuo
 
 

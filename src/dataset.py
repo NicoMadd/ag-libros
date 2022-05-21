@@ -47,7 +47,6 @@ def formatDataset(df: DataFrame) -> DataFrame:
 def getDataset() -> DataFrame:
     if os.path.exists(DATA_FILE_PATH):
         df = read_csv(DATA_FILE_PATH)
-        df = formatDataset(df)
     else:
         df = getDatasetFromUrl()
         df.to_csv(DATA_FILE_PATH, index=False)

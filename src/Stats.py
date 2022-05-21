@@ -19,8 +19,8 @@ class Stats:
         mejor = poblacion.iloc[0][["ID", "titulo", "aptitud"]].to_dict()
         peor = poblacion.iloc[-1][["ID", "titulo", "aptitud"]].to_dict()
         promedio = poblacion.aptitud.mean()
-        lowerQuartile = poblacion.aptitud.quantile(0.25)
-        upperQuartile = poblacion.aptitud.quantile(0.75)
+        # lowerQuartile = poblacion.aptitud.quantile(0.25)
+        # upperQuartile = poblacion.aptitud.quantile(0.75)
 
         # Formatear datos a un dict
 
@@ -48,11 +48,13 @@ class Stats:
         mejores = [corrida["mejor"]["aptitud"] for corrida in self.corridas]
         peores = [corrida["peor"]["aptitud"] for corrida in self.corridas]
 
-        xi = list(range(len(promedios)))
+        # show generation number by 5
+        x = np.arange(0, len(promedios)+1, 5)
+
         plt.title('Aptitud por Generacion')
         plt.xlabel("Generaciones")
         plt.ylabel("Aptitud")
-        plt.xticks(xi, xi)
+        plt.xticks(x, x)
         plt.plot(promedios, label="Promedio")
         plt.plot(mejores, label="Mejor")
         plt.plot(peores, label="Peor")
