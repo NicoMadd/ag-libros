@@ -8,16 +8,17 @@ from pandas import DataFrame
 from Criterios.Seleccion.CriterioSeleccion import CriterioSeleccion, Ranking
 from Criterios.Cruzamiento.CriterioCruzamiento import CriterioCruzamiento, CruzaSimple
 from Criterios.Mutacion.CriterioMutacion import CriterioMutacion, MutaSimple
-from Criterios.Paro.CriterioDeParo import CriterioDeParo
+from Criterios.Paro.CriterioDeParo import CantidadDeVueltas, CriterioDeParo
 from Criterios.PoblacionInicial.CriterioPoblacionInicial import AlAzar, CriterioPoblacionInicial
 
 
 class AG:
 
-    def __init__(self, criterio_seleccion: CriterioSeleccion = Ranking(),
+    def __init__(self,
+                 criterio_seleccion: CriterioSeleccion = Ranking(),
                  criterio_cruzamiento: CriterioCruzamiento = CruzaSimple(),
                  criterio_mutacion: CriterioMutacion = MutaSimple(),
-                 criterio_de_paro: CriterioDeParo = None,
+                 criterio_de_paro: CriterioDeParo = CantidadDeVueltas(10),
                  criterio_poblacion_inicial: CriterioPoblacionInicial = AlAzar(),
                  tamanio_subgrupo: int = 2,
                  tamanio_minimo_poblacion: int = 10,
@@ -66,6 +67,7 @@ class AG:
         df = poblacion
         tamanio_poblacion_actual = poblacion.shape[0]
         # Cruzar hasta llegar a la tamanio de poblacion minima
+        # TODO seleccionar en grupos de 2 de entre toda la poblacion.
         while tamanio_poblacion_actual < self.tamanio_minimo_poblacion:
             # Busca a dos individuos para cruzar
             individuo_1 = poblacion.sample(1)

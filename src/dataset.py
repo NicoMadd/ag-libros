@@ -1,6 +1,7 @@
 # Este archivo prepara el dataset para el algoritmo genetico
 
 
+import timeit
 import json
 import pandas as pd
 from pandas import DataFrame
@@ -41,6 +42,7 @@ def formatDataset(df: DataFrame) -> DataFrame:
     # ID as rowNumber
     df["ID"] = df.index
     df["generos"] = np.vectorize(formatGeneros)(df["generos"])
+    df["book"] = np.vectorize()
     df["aptitud"] = 0
 
     return df
@@ -63,8 +65,17 @@ if __name__ == "__main__":
     print("size:", df.shape[0])
 
     one = df.iloc[0]
-    api = GoogleBooksAPI()
-    api.addTitulo(one['titulo']).addAutor(
-        one['autor'])
-    book = api.getBook()
-    print(json.dumps(book, indent=4))
+<< << << < Updated upstream
+api = GoogleBooksAPI()
+api.addTitulo(one['titulo']).addAutor(
+    one['autor'])
+book = api.getBook()
+print(json.dumps(book, indent=4))
+== == == =
+# api = GoogleBooksAPI()
+# api.addTitulo(one['titulo']).addAutor(
+#     one['autor'])
+# book = api.getBook()
+print(one)
+# print(json.dumps(book, indent=4))
+>>>>>> > Stashed changes

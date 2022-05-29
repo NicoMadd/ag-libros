@@ -4,8 +4,6 @@ from typing import TypeVar
 
 from pandas import Series
 
-from Individuos.Libro import Libro
-
 
 class FuncionAptitud:
     def __init__(self):
