@@ -19,6 +19,8 @@ class Stats:
         mejor = poblacion.iloc[0][["ID", "titulo", "aptitud"]].to_dict()
         peor = poblacion.iloc[-1][["ID", "titulo", "aptitud"]].to_dict()
         promedio = poblacion.aptitud.mean()
+        print("Mejor:", mejor)
+        print("Peor:", peor)
         # lowerQuartile = poblacion.aptitud.quantile(0.25)
         # upperQuartile = poblacion.aptitud.quantile(0.75)
 

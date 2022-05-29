@@ -7,7 +7,7 @@ import pandas as pd
 from pandas import DataFrame
 from Criterios.Seleccion.CriterioSeleccion import CriterioSeleccion, Ranking
 from Criterios.Cruzamiento.CriterioCruzamiento import CriterioCruzamiento, CruzaSimple
-from Criterios.Mutacion.CriterioMutacion import CriterioMutacion, MutaSimple
+from Criterios.Mutacion.CriterioMutacion import CriterioMutacion, MutaSimple, MutaOrdenada
 from Criterios.Paro.CriterioDeParo import CriterioDeParo
 from Criterios.PoblacionInicial.CriterioPoblacionInicial import AlAzar, CriterioPoblacionInicial
 
@@ -16,7 +16,7 @@ class AG:
 
     def __init__(self, criterio_seleccion: CriterioSeleccion = Ranking(),
                  criterio_cruzamiento: CriterioCruzamiento = CruzaSimple(),
-                 criterio_mutacion: CriterioMutacion = MutaSimple(),
+                 criterio_mutacion: CriterioMutacion = MutaOrdenada(),
                  criterio_de_paro: CriterioDeParo = None,
                  criterio_poblacion_inicial: CriterioPoblacionInicial = AlAzar(),
                  tamanio_subgrupo: int = 2,
@@ -33,6 +33,7 @@ class AG:
         self.dataset = None
 
     def getPoblacionInicial(self, dataset: DataFrame) -> DataFrame:
+        dataset.sort_values(by=list(dataset.columns), inplace=True, ignore_index=True)
         self.dataset = dataset
         return self.criterio_poblacion_inicial.samplear(dataset)
 

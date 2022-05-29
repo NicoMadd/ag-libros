@@ -20,7 +20,7 @@ algoritmoGenetico: AG = AG(probabilidad_mutacion=0.02,
 algoritmoGenetico.setCriterioPoblacionInicial(AlAzar(200))
 algoritmoGenetico.setCriterioSeleccion(
     Ranking(fraccionamiento=0.5))
-algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(120))
+algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(50))
 
 stats = Stats()
 if __name__ == "__main__":
