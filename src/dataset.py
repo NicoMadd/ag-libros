@@ -20,6 +20,8 @@ DATA_FILE_PATH = f'{DATA_DIR}/{DATA_FILENAME}'
 def getDatasetFromUrl() -> DataFrame:
     df = pd.read_csv(DATASET_URL)
     df = formatDataset(df)
+    df.sort_values(by=['titulo', 'autor', 'calificacion', 'language', 'generos', 'publicador',
+       'likedPercent', 'genero', 'subgenero', 'aptitud', 'ID'], inplace=True, ignore_index=True)
     return df
 
 # TODO Normalizar el dataset, obteniendo la informacion que mas nos sirva y clasificandolo

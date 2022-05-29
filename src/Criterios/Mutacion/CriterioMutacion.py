@@ -26,7 +26,6 @@ class MutaSimple(CriterioMutacion):
         # return individuo
 
 class MutaOrdenada(CriterioMutacion):
-
     def mutar(self, individuo: DataFrame, dataset: DataFrame) -> DataFrame:
         # set titulo a Mutado
         id = individuo["ID"].copy()

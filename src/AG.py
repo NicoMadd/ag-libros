@@ -33,7 +33,6 @@ class AG:
         self.dataset = None
 
     def getPoblacionInicial(self, dataset: DataFrame) -> DataFrame:
-        dataset.sort_values(by=list(dataset.columns), inplace=True, ignore_index=True)
         self.dataset = dataset
         return self.criterio_poblacion_inicial.samplear(dataset)
 
