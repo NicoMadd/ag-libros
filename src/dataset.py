@@ -65,17 +65,3 @@ if __name__ == "__main__":
     print("size:", df.shape[0])
 
     one = df.iloc[0]
-<< << << < Updated upstream
-api = GoogleBooksAPI()
-api.addTitulo(one['titulo']).addAutor(
-    one['autor'])
-book = api.getBook()
-print(json.dumps(book, indent=4))
-== == == =
-# api = GoogleBooksAPI()
-# api.addTitulo(one['titulo']).addAutor(
-#     one['autor'])
-# book = api.getBook()
-print(one)
-# print(json.dumps(book, indent=4))
->>>>>> > Stashed changes

@@ -18,15 +18,14 @@ class GoogleBooksAPI:
     def parseParams(self, params):
         return "+".join(f"{key}:{value}" for key, value in params.items())
 
-
-   def getBook(self):
+    def getBook(self):
         parsedParams = self.parseParams(self.params)
         response = requests.get(f"{self.url}?q={parsedParams}&printType=books")
         self.resetParams()
         print(response.url)
         return json.loads(response.text)["items"][0]
 
-   def parseBook(self, bookJson: json) -> LibroAPI:
+    def parseBook(self, bookJson: json) -> LibroAPI:
         volumeInfo = bookJson.get('volumeInfo')
         saleInfo = bookJson.get('saleInfo')
         publishedDate = volumeInfo.get('publishedDate')
