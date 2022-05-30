@@ -63,7 +63,6 @@ class AG:
         return df
 
     def cruzamiento(self, poblacion: DataFrame) -> DataFrame:
-        df = poblacion
         tamanio_poblacion_actual = poblacion.shape[0]
         # Cruzar hasta llegar a la tamanio de poblacion minima
         while tamanio_poblacion_actual < self.tamanio_minimo_poblacion:
@@ -73,9 +72,9 @@ class AG:
             # Cruzamiento. Se pasan los dos padres y se obtiene un hijo mezcla de ambos. De ser o no un libro existente se agrega igual, de no serlo, se descartara en la etapa de seleccion.
             hijo = self.criterio_cruzamiento.cruzar(
                 individuo_1, individuo_2)
-            df = pd.concat([df, hijo])
+            poblacion = pd.concat([poblacion, hijo])
             tamanio_poblacion_actual += 1
-        return df
+        return poblacion
 
     def mutacion(self, poblacion: DataFrame) -> DataFrame:
         mutaciones = 0

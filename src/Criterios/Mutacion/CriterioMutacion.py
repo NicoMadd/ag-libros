@@ -8,7 +8,7 @@ from pandas import DataFrame, Series
 # Adaptativa por Temperatura
 # Ascendente
 # Descendente
-from src.FuncionAptitud import FuncionAptitud
+from FuncionAptitud import FuncionAptitud
 
 
 class CriterioMutacion:
@@ -24,6 +24,7 @@ class MutaSimple(CriterioMutacion):
         return individuo.iloc[0]
         # individuo["titulo"] = "Mutado"
         # return individuo
+
 
 class MutaOrdenada(CriterioMutacion):
     def mutar(self, individuo: DataFrame, dataset: DataFrame) -> DataFrame:

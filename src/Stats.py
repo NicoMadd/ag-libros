@@ -16,8 +16,9 @@ class Stats:
         # Ordena la poblacion por aptitud
         poblacion.sort_values(by="aptitud", ascending=False, inplace=True)
         # Obtiene al mejor, peor y un promedio de los valores de aptitud
-        mejor = poblacion.iloc[0][["ID", "titulo", "aptitud"]].to_dict()
-        peor = poblacion.iloc[-1][["ID", "titulo", "aptitud"]].to_dict()
+        mejor = poblacion.head(
+            1)[["ID", "titulo", "aptitud"]].iloc[0].to_dict()
+        peor = poblacion.tail(1)[["ID", "titulo", "aptitud"]].iloc[0].to_dict()
         promedio = poblacion.aptitud.mean()
         print("Mejor:", mejor)
         print("Peor:", peor)
@@ -49,9 +50,11 @@ class Stats:
                      for corrida in self.corridas]
         mejores = [corrida["mejor"]["aptitud"] for corrida in self.corridas]
         peores = [corrida["peor"]["aptitud"] for corrida in self.corridas]
+        # x = np.arange(0, len(promedios)+1, 5)
 
-        # show generation number by 5
-        x = np.arange(0, len(promedios)+1, 5)
+        # show generation number by 5, first and last must be included
+        x = np.arange(0, len(promedios) + 1, 5)
+        x = np.append(x, len(promedios)-1)
 
         plt.title('Aptitud por Generacion')
         plt.xlabel("Generaciones")

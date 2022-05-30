@@ -1,10 +1,6 @@
 # Esta clase se encarga de construir mediante parametros, ya sean seteados para testear o obtenidos del usuario, para armar la funcion aptitud del calculo de atraccion a un libro/individuo.
 
-from typing import TypeVar
-
 from pandas import Series
-
-from Individuos.Libro import Libro
 
 
 class FuncionAptitud:
