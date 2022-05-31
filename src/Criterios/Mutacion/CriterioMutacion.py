@@ -29,10 +29,11 @@ class MutaSimple(CriterioMutacion):
 class MutaOrdenada(CriterioMutacion):
     def mutar(self, individuo: DataFrame, dataset: DataFrame) -> DataFrame:
         # set titulo a Mutado
-        id = individuo["ID"].copy()
+        id = individuo["ID"]
         id_actual = dataset.loc[dataset["ID"] == id].index.values[0]
         dataset = dataset.iloc[[id_actual - 1, id_actual + 1]]
-        dataset.sort_values(by=['aptitud'], inplace=True, ignore_index=True)
+        dataset.sort_values(by=['aptitud'], inplace=True,
+                            ignore_index=True, ascending=False)
         return dataset.iloc[0]
         # individuo["titulo"] = "Mutado"
         # return individuo

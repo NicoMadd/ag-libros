@@ -1,4 +1,5 @@
 from pandas import DataFrame
+from FuncionAptitud import FuncionAptitud
 
 from utils import stats_poblacion
 import seaborn as sns
@@ -13,8 +14,13 @@ class Stats:
         self.peor = None
 
     def saveStats(self, poblacion: DataFrame):
+
+        # Calculo funcion de aptitud
+        poblacion["aptitud"] = FuncionAptitud().evaluar(poblacion)
+
         # Ordena la poblacion por aptitud
         poblacion.sort_values(by="aptitud", ascending=False, inplace=True)
+
         # Obtiene al mejor, peor y un promedio de los valores de aptitud
         mejor = poblacion.head(
             1)[["ID", "titulo", "aptitud"]].iloc[0].to_dict()
@@ -22,14 +28,7 @@ class Stats:
         promedio = poblacion.aptitud.mean()
         print("Mejor:", mejor)
         print("Peor:", peor)
-        # lowerQuartile = poblacion.aptitud.quantile(0.25)
-        # upperQuartile = poblacion.aptitud.quantile(0.75)
 
-        # Formatear datos a un dict
-
-        # mejor = {"ID": mejor.ID, "titulo": mejor.titulo,
-        #          "aptitud": mejor.aptitud}
-        # peor = {"ID": peor.ID, "titulo": peor.titulo, "aptitud": peor.aptitud}
         promedio = {"aptitud": promedio}
 
         # Guardar al mejor y al peor

@@ -10,10 +10,10 @@ from pandas import DataFrame, Series
 
 
 class CriterioCruzamiento:
-    def cruzar(self, individuo_1: Series, individuo_2: Series) -> DataFrame:
+    def cruzar(self, individuo_1: DataFrame, individuo_2: DataFrame) -> DataFrame:
         return individuo_1
 
 
 class CruzaSimple(CriterioCruzamiento):
-    def cruzar(self, individuo_1: Series, individuo_2: Series) -> DataFrame:
+    def cruzar(self, individuo_1: DataFrame, individuo_2: DataFrame) -> DataFrame:
         return individuo_1

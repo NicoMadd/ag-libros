@@ -50,40 +50,58 @@ class AG:
         df = DataFrame()
         for _, subgrupo in subgrupos:
             subgrupo = self.criterio_seleccion.seleccionar(subgrupo)
-            # best = subgrupo.iloc[0][["titulo", "aptitud"]].to_dict()
-            # print("Mejor Subgrupo: ", best)
-
             df = pd.concat([df, subgrupo])
-        # Validar que los elegidos sean libros existentes TODO
-        # df.sort_values(by="aptitud", ascending=False, inplace=True)
-        # best = df.iloc[0][["titulo", "aptitud"]].to_dict()
-        # print("Mejor Final: ", best)
+
         print("Poblacion Final: ", df.shape[0])
 
         return df
 
     def cruzamiento(self, poblacion: DataFrame) -> DataFrame:
         tamanio_poblacion_actual = poblacion.shape[0]
-        # Cruzar hasta llegar a la tamanio de poblacion minima
+        print("Poblacion inicial Cruza: ", tamanio_poblacion_actual)
+
+        # for iterando en la poblacion agarrando dos individuos y cruzandolos.
+        # Si es impar el ultimo no se cruza.
+        df = poblacion.copy()
         while tamanio_poblacion_actual < self.tamanio_minimo_poblacion:
-            # Busca a dos individuos para cruzar
-            individuo_1 = poblacion.sample(1)
-            individuo_2 = poblacion.sample(1)
-            # Cruzamiento. Se pasan los dos padres y se obtiene un hijo mezcla de ambos. De ser o no un libro existente se agrega igual, de no serlo, se descartara en la etapa de seleccion.
-            hijo = self.criterio_cruzamiento.cruzar(
-                individuo_1, individuo_2)
-            poblacion = pd.concat([poblacion, hijo])
-            tamanio_poblacion_actual += 1
+            for i in range(poblacion.shape[0]):
+
+                if i % 2 == 0:
+                    if i == df.shape[0] - 1:
+                        break
+                    individuo1 = df.iloc[i]
+                    individuo2 = df.iloc[i+1]
+                    hijo = self.criterio_cruzamiento.cruzar(
+                        individuo1, individuo2)
+                    poblacion = pd.concat([poblacion, hijo])
+                    tamanio_poblacion_actual += 1
+        print("Poblacion Final Cruza: ", poblacion.loc[poblacion.ID.isnull()])
+        #         tamanio_poblacion_actual = poblacion.shape[0]
+        # Cruzar hasta llegar a la tamanio de poblacion minima
+        # Criterio de padres Random
+        # while tamanio_poblacion_actual < self.tamanio_minimo_poblacion:
+        #     # Busca a dos individuos para cruzar
+        #     individuo_1 = poblacion.sample(1)
+        #     individuo_2 = poblacion.sample(1)
+        #     # Cruzamiento. Se pasan los dos padres y se obtiene un hijo mezcla de ambos. De ser o no un libro existente se agrega igual, de no serlo, se descartara en la etapa de seleccion.
+        #     hijo = self.criterio_cruzamiento.cruzar(
+        #         individuo_1, individuo_2)
+        #     poblacion = pd.concat([poblacion, hijo])
+        #     tamanio_poblacion_actual += 1
         return poblacion
 
     def mutacion(self, poblacion: DataFrame) -> DataFrame:
         mutaciones = 0
+
+        print("Poblacion inicial: ", poblacion.shape[0])
+        print(poblacion.columns)
         # Obtiene indices los libros de la poblacion que van a mutar
         for i in range(poblacion.shape[0]):
             if np.random.random() < self.probabilidad_mutacion:
                 individuo = poblacion.iloc[i]
                 individuo = self.criterio_mutacion.mutar(
                     individuo, self.dataset)
+                print(poblacion.columns)
                 poblacion.iloc[i] = individuo
                 mutaciones += 1
         print("Mutaciones: ", mutaciones)
