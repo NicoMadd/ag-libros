@@ -10,6 +10,7 @@ from Criterios.Cruzamiento.CriterioCruzamiento import CriterioCruzamiento, Cruza
 from Criterios.Mutacion.CriterioMutacion import CriterioMutacion, MutaSimple, MutaOrdenada
 from Criterios.Paro.CriterioDeParo import CriterioDeParo
 from Criterios.PoblacionInicial.CriterioPoblacionInicial import AlAzar, CriterioPoblacionInicial
+from FuncionAptitud import FuncionAptitud
 
 
 class AG:
@@ -32,6 +33,10 @@ class AG:
         self.tamanio_minimo_poblacion = tamanio_minimo_poblacion
         self.probabilidad_mutacion = probabilidad_mutacion
         self.dataset = None
+
+    def setFuncionAptitud(self, funcion_aptitud: FuncionAptitud):
+        self.funcion_aptitud = funcion_aptitud
+        self.criterio_seleccion.setFuncionAptitud(funcion_aptitud)
 
     def getPoblacionInicial(self, dataset: DataFrame) -> DataFrame:
         self.dataset = dataset
