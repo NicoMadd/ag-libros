@@ -21,6 +21,8 @@ class FuncionAptitud:
     def evaluar(self, individuo: DataFrame) -> Series:
         """
         Evalua la funcion aptitud de un individuo.
+
+        por ahora solo hay precio, genero(genero y subgenero), cantidad de paginas y fecha de publicacion
         """
 
         # return random float series

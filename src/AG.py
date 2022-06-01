@@ -36,7 +36,6 @@ class AG:
 
     def setFuncionAptitud(self, funcion_aptitud: FuncionAptitud):
         self.funcion_aptitud = funcion_aptitud
-        self.criterio_seleccion.setFuncionAptitud(funcion_aptitud)
 
     def getPoblacionInicial(self, dataset: DataFrame) -> DataFrame:
         self.dataset = dataset
@@ -55,6 +54,7 @@ class AG:
 
         df = DataFrame()
         for _, subgrupo in subgrupos:
+            subgrupo["aptitud"] = self.funcion_aptitud.evaluar(subgrupo)
             subgrupo = self.criterio_seleccion.seleccionar(subgrupo)
             df = pd.concat([df, subgrupo])
 
@@ -70,9 +70,9 @@ class AG:
         tamanio_poblacion = poblacion.shape[0]
         print("Poblacion Inicial Cruzamiento: ", tamanio_poblacion)
         df = DataFrame(poblacion, columns=poblacion.columns)
-        subgrupos = df.groupby(
-            np.arange(len(df)) // 2)
         while tamanio_poblacion < self.tamanio_minimo_poblacion:
+            subgrupos = poblacion.sample(frac=1).groupby(
+                np.arange(len(poblacion)) // 2)
             for _, subgrupo in subgrupos:
                 if subgrupo.shape[0] == 1:
                     break
