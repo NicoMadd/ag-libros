@@ -16,9 +16,9 @@ import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
 
 
-algoritmoGenetico: AG = AG(probabilidad_mutacion=0.16,
-                           tamanio_subgrupo=25, tamanio_minimo_poblacion=250)
-algoritmoGenetico.setCriterioPoblacionInicial(AlAzar(250))
+algoritmoGenetico: AG = AG(probabilidad_mutacion=0.06,
+                           tamanio_subgrupo=25, tamanio_minimo_poblacion=150)
+algoritmoGenetico.setCriterioPoblacionInicial(AlAzar(150))
 algoritmoGenetico.setCriterioSeleccion(
     Ranking(fraccionamiento=0.5))
 algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(100))

@@ -49,11 +49,9 @@ class Stats:
                      for corrida in self.corridas]
         mejores = [corrida["mejor"]["aptitud"] for corrida in self.corridas]
         peores = [corrida["peor"]["aptitud"] for corrida in self.corridas]
-        # x = np.arange(0, len(promedios)+1, 5)
 
-        # show generation number by 5, first and last must be included
-        x = np.arange(0, len(promedios) + 1, 5)
-        x = np.append(x, len(promedios)-1)
+        # selecciona los indices de las generaciones para el grafico
+        x = np.arange(0, len(promedios) + 1, len(promedios) // 5)
 
         plt.title('Aptitud por Generacion')
         plt.xlabel("Generaciones")

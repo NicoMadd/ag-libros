@@ -32,4 +32,7 @@ class FuncionAptitud:
 
     def evaluar(self, individuo: Series) -> float:
         # contar vocales en titulo
-        return individuo["titulo"].str.count("a") + individuo["titulo"].str.count("e") + individuo["titulo"].str.count("i") + individuo["titulo"].str.count("o") + individuo["titulo"].str.count("u")
+        # return individuo["titulo"].str.count("a") + individuo["titulo"].str.count("e") + individuo["titulo"].str.count("i") + individuo["titulo"].str.count("o") + individuo["titulo"].str.count("u")
+
+        # el titulo mas largo
+        return individuo["titulo"].str.len()
