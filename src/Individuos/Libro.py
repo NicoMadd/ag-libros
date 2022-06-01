@@ -5,7 +5,7 @@ from Individuos.Individuo import Individuo
 
 class LibroAPI(Individuo):
 
-    def __init__(self, numero_paginas, ratings, precio, fechaPublicacion):
+    def __init__(self, numero_paginas=None, ratings=None, precio=None, fechaPublicacion=None):
         self.numero_paginas = numero_paginas
         self.ratings = ratings
         self.precio = precio

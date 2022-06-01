@@ -3,6 +3,7 @@
 
 from Criterios.Cruzamiento.CriterioCruzamiento import CruzaSimple
 from Criterios.Paro.CriterioDeParo import CantidadDeVueltas
+from Interfaz import Interfaz
 from Stats import Stats
 from utils import stats_poblacion
 from FuncionAptitud import FuncionAptitud
@@ -21,12 +22,12 @@ algoritmoGenetico: AG = AG(probabilidad_mutacion=0.06,
 algoritmoGenetico.setCriterioPoblacionInicial(AlAzar(150))
 algoritmoGenetico.setCriterioSeleccion(
     Ranking(fraccionamiento=0.5))
-algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(100))
+algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(10))
 
 stats = Stats()
 
 # TODO
-# 1. Completar precio, cantidad de paginas en el dataset.
+# 1. Completar precio, cantidad de paginas en el dataset. ✔
 # 2. Crear interfaz por consola para definir funcion aptitud.
 # 3. Implementar 2 criterios de seleccion
 # 4. Implementar 2 criterios de cruzamiento. Mitad de tabla
@@ -34,6 +35,9 @@ stats = Stats()
 
 
 if __name__ == "__main__":
+    # Definir propiedades de la funcion aptitud
+    funcionAptitud = Interfaz().getFuncionAptitud()
+
     poblacion: DataFrame = algoritmoGenetico.getPoblacionInicial(getDataset())
     vuelta = 0
     while True:

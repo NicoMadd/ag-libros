@@ -50,6 +50,10 @@ def formatDataset(df: DataFrame) -> DataFrame:
     df['subgenero'] = np.vectorize(formatGeneros)(
         df["generos_normalizados"], 1)
     df.drop(columns=['generos_normalizados'], inplace=True)
+    df["precio"] = np.random.normal(0, 9000, len(df))
+    df["fechaPublicacion"] = pd.Series(
+        np.random.randint(1800, 2022, size=len(df)))
+    df["numero_paginas"] = pd.Series(np.random.randint(0, 4000, size=len(df)))
     df["aptitud"] = 0
 
     return df
@@ -95,9 +99,9 @@ def getDataset() -> DataFrame:
 
 if __name__ == "__main__":
     # df = getDatasetFromUrl()
-    df = getDataset()
+    dataset = getDataset()
     # df.to_csv(DATA_FILE_PATH, index=False)
-    print(df.head())
-    print("size:", df.shape[0])
+    # print(dataset.head())
+    # print("size:", dataset.shape[0])
 
-    one = df.iloc[0]
+    print(dataset.head())

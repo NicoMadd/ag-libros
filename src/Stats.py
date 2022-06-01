@@ -26,6 +26,10 @@ class Stats:
             1)[["ID", "titulo", "aptitud"]].iloc[0].to_dict()
         peor = poblacion.tail(1)[["ID", "titulo", "aptitud"]].iloc[0].to_dict()
         promedio = poblacion.aptitud.mean()
+
+        # lowerQuartile = poblacion.aptitud.quantile(0.25)
+        # upperQuartile = poblacion.aptitud.quantile(0.75)
+
         print("Mejor:", mejor)
         print("Peor:", peor)
 
@@ -38,6 +42,7 @@ class Stats:
             "aptitud"] <= peor["aptitud"] else peor
 
         corrida = {"mejor": mejor, "peor": peor, "promedio": promedio}
+        #    "lowerQuartile": lowerQuartile, "upperQuartile": upperQuartile}
         self.corridas.append(corrida)
 
     def getStats(self):
@@ -49,6 +54,10 @@ class Stats:
                      for corrida in self.corridas]
         mejores = [corrida["mejor"]["aptitud"] for corrida in self.corridas]
         peores = [corrida["peor"]["aptitud"] for corrida in self.corridas]
+        # lowerQuartiles = [corrida["lowerQuartile"]["aptitud"]
+        #                   for corrida in self.corridas]
+        # upperQuartiles = [corrida["upperQuartile"]["aptitud"]
+        #                   for corrida in self.corridas]
 
         # selecciona los indices de las generaciones para el grafico
         x = np.arange(0, len(promedios) + 1, len(promedios) // 5)
@@ -60,6 +69,8 @@ class Stats:
         plt.plot(promedios, label="Promedio")
         plt.plot(mejores, label="Mejor")
         plt.plot(peores, label="Peor")
+        # plt.plot(lowerQuartiles, label="Lower Quartile")
+        # plt.plot(upperQuartiles, label="Upper Quartile")
         plt.legend()
         plt.show()
 
