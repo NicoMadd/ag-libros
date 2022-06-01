@@ -70,17 +70,18 @@ class AG:
         tamanio_poblacion = poblacion.shape[0]
         print("Poblacion Inicial Cruzamiento: ", tamanio_poblacion)
         df = DataFrame(poblacion, columns=poblacion.columns)
-
+        subgrupos = df.groupby(
+            np.arange(len(df)) // 2)
         while tamanio_poblacion < self.tamanio_minimo_poblacion:
-            subgrupos = df.groupby(
-                np.arange(len(df)) // 2)
-
             for _, subgrupo in subgrupos:
                 if subgrupo.shape[0] == 1:
                     break
                 hijo = self.criterio_cruzamiento.cruzar(
-                    subgrupo.iloc[0], subgrupo.iloc[1])
-                df = pd.concat([df, hijo.to_frame().T])
+                    subgrupo.iloc[0], subgrupo.iloc[1], self.dataset)
+                hijo = hijo.to_frame().T
+                hijo['aptitud'] = self.funcion_aptitud.evaluar(hijo)
+                print("Aptitud: ", hijo['aptitud'])
+                df = pd.concat([df, hijo])
                 tamanio_poblacion += 1
 
         print("Poblacion Final Cruzamiento: ", tamanio_poblacion)
