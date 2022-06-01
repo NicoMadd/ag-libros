@@ -1,6 +1,7 @@
 # Este archivo prepara el dataset para el algoritmo genetico
 
 
+from datetime import date
 import timeit
 import json
 import pandas as pd
@@ -39,6 +40,8 @@ def formatGeneros(generos: list, posicion: int):
 
 def formatDataset(df: DataFrame) -> DataFrame:
 
+    today = date.today()
+
     df.drop(columns=['bookId'], inplace=True, axis=1)
     df.rename(inplace=True, columns={
               'title': 'titulo', 'author': 'autor', 'rating': 'calificacion', 'genres': 'generos', 'publisher': 'publicador', 'likedPercentage': 'porcentaje de aprobacion'})
@@ -50,10 +53,22 @@ def formatDataset(df: DataFrame) -> DataFrame:
     df['subgenero'] = np.vectorize(formatGeneros)(
         df["generos_normalizados"], 1)
     df.drop(columns=['generos_normalizados'], inplace=True)
+
+    # Setear random a partir de las sigueintes opciones [0-1000, 1000 - 2000, 2000 - 3000, 3000 - mas de 3000]
+
     df["precio"] = np.random.normal(0, 9000, len(df))
+    df["precio"] = np.select([df["precio"] < 1000, df["precio"] < 2000,
+                             df["precio"] < 3000, df["precio"] >= 3000], ["0-1000", "1000-2000", "2000-3000", "mas de 3000"])
+
     df["fechaPublicacion"] = pd.Series(
-        np.random.randint(1800, 2022, size=len(df)))
-    df["numero_paginas"] = pd.Series(np.random.randint(0, 4000, size=len(df)))
+        np.random.randint(-2000, 2022, size=len(df)))
+    df["fechaPublicacion"] = np.select([df["fechaPublicacion"] < 0, df["fechaPublicacion"] < today.year-10,
+                                        df["fechaPublicacion"] < today.year-1, df["fechaPublicacion"] < today.year],
+                                       ["Antes del 2000", f"Antes del {today.year-10} ", "Ultima Decada", "Ultimo Año"])
+    df["numero_paginas"] = pd.Series(np.random.randint(0, 1000, size=len(df)))
+    df["numero_paginas"] = np.select([df["numero_paginas"] < 100, df["numero_paginas"]
+                                     < 300, df["numero_paginas"] < 500], ["0-100", "100-300", "300-500"], default="mas de 500")
+
     df["aptitud"] = 0
 
     return df
@@ -64,14 +79,14 @@ def normalizeGenre(generosDF):
                             ['Ciencia Ficcion', ['Science Fiction'], [
                                 '###@###']], ['Accion', ['Action'], ['###@###']],
                             ['Western', ['West'], ['Western Africa']], [
-                                'Aventura', ['Adventure'], ['###@###']],
-                            ['Terror/Horror', ['Horror'], ['###@###']], ['Suspenso',
-                                                                         ['Thriller', 'Suspense'], ['###@###']],
-                            ['Policial', ['Crime', 'Police'], ['###@###']
-                             ], ['Misterio', ['Mystery'], ['###@###']],
-                            ['Fantasia', ['Fantas'], ['###@###']
-                             ], ['Epic', ['Epic'], ['###@###']],
-                            ['Guerra', ['War'], ['Warming', 'Warcraft']], [
+        'Aventura', ['Adventure'], ['###@###']],
+        ['Terror/Horror', ['Horror'], ['###@###']], ['Suspenso',
+                                                     ['Thriller', 'Suspense'], ['###@###']],
+        ['Policial', ['Crime', 'Police'], ['###@###']
+         ], ['Misterio', ['Mystery'], ['###@###']],
+        ['Fantasia', ['Fantas'], ['###@###']
+         ], ['Epic', ['Epic'], ['###@###']],
+        ['Guerra', ['War'], ['Warming', 'Warcraft']], [
         'Romance', ['Romance', 'Love'], ['###@###']],
         ['Drama', ['Drama'], ['###@###']]]
     generos_encontrados = list()

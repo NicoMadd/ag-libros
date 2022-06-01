@@ -22,12 +22,12 @@ algoritmoGenetico: AG = AG(probabilidad_mutacion=0.06,
 algoritmoGenetico.setCriterioPoblacionInicial(AlAzar(150))
 algoritmoGenetico.setCriterioSeleccion(
     Ranking(fraccionamiento=0.5))
-algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(10))
+algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(100))
 
 stats = Stats()
 
 # TODO
-# 1. Completar precio, cantidad de paginas en el dataset. ✔
+# 1. Completar precio, cantidad de paginas y fecha de publicacion en el dataset. ✔
 # 2. Crear interfaz por consola para definir funcion aptitud.
 # 3. Implementar 2 criterios de seleccion
 # 4. Implementar 2 criterios de cruzamiento. Mitad de tabla
@@ -36,7 +36,7 @@ stats = Stats()
 
 if __name__ == "__main__":
     # Definir propiedades de la funcion aptitud
-    funcionAptitud = Interfaz().getFuncionAptitud()
+    # funcionAptitud = Interfaz().getFuncionAptitud()
 
     poblacion: DataFrame = algoritmoGenetico.getPoblacionInicial(getDataset())
     vuelta = 0
