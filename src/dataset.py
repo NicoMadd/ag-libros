@@ -21,6 +21,15 @@ DATA_FILENAME = os.getenv("DATA_FILENAME")
 DATA_FILE_PATH = f'{DATA_DIR}/{DATA_FILENAME}'
 
 
+# Completar si falta alguno
+generos = ['Biopic', 'Comedia', 'Ciencia Ficcion', 'Accion',
+           'Western', 'Policial', 'Misterio', 'Drama', 'Romance', 'Terror']
+precios = ['0-1000', '1000-2000', '2000-3000', 'mas de 3000']
+fechas = ['Antes del 2000',
+          f'Antes del {date.today().year-10} ', 'Ultima Decada', 'Ultimo Año']
+rangos_de_paginas = ['0-100', '100-300', '300-500', 'mas de 500']
+
+
 def getDatasetFromUrl() -> DataFrame:
     df = pd.read_csv(DATASET_URL)
     df = formatDataset(df)
