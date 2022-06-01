@@ -28,9 +28,9 @@ stats = Stats()
 
 # TODO
 # 1. Completar precio, cantidad de paginas y fecha de publicacion en el dataset. ✔
-# 2. Crear interfaz por consola para definir funcion aptitud.
+# 2. Crear interfaz por consola para definir funcion aptitud. ✔
 # 3. Implementar 2 criterios de seleccion
-# 4. Implementar 2 criterios de cruzamiento. Mitad de tabla
+# 4. Implementar 2 criterios de cruzamiento. Mitad de tabla. ✔
 # 5. Implementar 2 criterios de paro
 
 
