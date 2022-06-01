@@ -4,11 +4,11 @@
 
 import numpy as np
 import pandas as pd
-from pandas import DataFrame
+from pandas import DataFrame, Series
 from Criterios.Seleccion.CriterioSeleccion import CriterioSeleccion, Ranking
 from Criterios.Cruzamiento.CriterioCruzamiento import CriterioCruzamiento, CruzaSimple
-from Criterios.Mutacion.CriterioMutacion import CriterioMutacion, MutaSimple
-from Criterios.Paro.CriterioDeParo import CantidadDeVueltas, CriterioDeParo
+from Criterios.Mutacion.CriterioMutacion import CriterioMutacion, MutaSimple, MutaOrdenada
+from Criterios.Paro.CriterioDeParo import CriterioDeParo
 from Criterios.PoblacionInicial.CriterioPoblacionInicial import AlAzar, CriterioPoblacionInicial
 
 
@@ -17,8 +17,8 @@ class AG:
     def __init__(self,
                  criterio_seleccion: CriterioSeleccion = Ranking(),
                  criterio_cruzamiento: CriterioCruzamiento = CruzaSimple(),
-                 criterio_mutacion: CriterioMutacion = MutaSimple(),
-                 criterio_de_paro: CriterioDeParo = CantidadDeVueltas(10),
+                 criterio_mutacion: CriterioMutacion = MutaOrdenada(),
+                 criterio_de_paro: CriterioDeParo = None,
                  criterio_poblacion_inicial: CriterioPoblacionInicial = AlAzar(),
                  tamanio_subgrupo: int = 2,
                  tamanio_minimo_poblacion: int = 10,
@@ -46,50 +46,56 @@ class AG:
             np.arange(len(poblacion)) // self.tamanio_subgrupo)
 
         print("Subgrupos: ", len(subgrupos))
-        print("Poblacion inicial: ", poblacion.shape[0])
+        print("Poblacion Inicial Seleccion: ", poblacion.shape[0])
 
         df = DataFrame()
         for _, subgrupo in subgrupos:
             subgrupo = self.criterio_seleccion.seleccionar(subgrupo)
-            # best = subgrupo.iloc[0][["titulo", "aptitud"]].to_dict()
-            # print("Mejor Subgrupo: ", best)
-
             df = pd.concat([df, subgrupo])
-        # Validar que los elegidos sean libros existentes TODO
-        # df.sort_values(by="aptitud", ascending=False, inplace=True)
-        # best = df.iloc[0][["titulo", "aptitud"]].to_dict()
-        # print("Mejor Final: ", best)
-        print("Poblacion Final: ", df.shape[0])
+
+        print("Poblacion Final Seleccion: ", df.shape[0])
 
         return df
 
     def cruzamiento(self, poblacion: DataFrame) -> DataFrame:
-        df = poblacion
-        tamanio_poblacion_actual = poblacion.shape[0]
-        # Cruzar hasta llegar a la tamanio de poblacion minima
-        # TODO seleccionar en grupos de 2 de entre toda la poblacion.
-        while tamanio_poblacion_actual < self.tamanio_minimo_poblacion:
-            # Busca a dos individuos para cruzar
-            individuo_1 = poblacion.sample(1)
-            individuo_2 = poblacion.sample(1)
-            # Cruzamiento. Se pasan los dos padres y se obtiene un hijo mezcla de ambos. De ser o no un libro existente se agrega igual, de no serlo, se descartara en la etapa de seleccion.
-            hijo = self.criterio_cruzamiento.cruzar(
-                individuo_1, individuo_2)
-            df = pd.concat([df, hijo])
-            tamanio_poblacion_actual += 1
+        # Separa la poblacion en subgrupos de dos.
+        # Aplicar la cruza por cada grupo, obteniendo un hijo.
+        # Concatenar los hijos en una nueva poblacion y devolverla.
+
+        tamanio_poblacion = poblacion.shape[0]
+        print("Poblacion Inicial Cruzamiento: ", tamanio_poblacion)
+        df = DataFrame(poblacion, columns=poblacion.columns)
+
+        while tamanio_poblacion < self.tamanio_minimo_poblacion:
+            subgrupos = df.groupby(
+                np.arange(len(df)) // 2)
+
+            for _, subgrupo in subgrupos:
+                if subgrupo.shape[0] == 1:
+                    break
+                hijo = self.criterio_cruzamiento.cruzar(
+                    subgrupo.iloc[0], subgrupo.iloc[1])
+                df = pd.concat([df, hijo.to_frame().T])
+                tamanio_poblacion += 1
+
+        print("Poblacion Final Cruzamiento: ", tamanio_poblacion)
         return df
 
     def mutacion(self, poblacion: DataFrame) -> DataFrame:
         mutaciones = 0
+
+        print("Poblacion Inicial Mutacion: ", poblacion.shape[0])
+
         # Obtiene indices los libros de la poblacion que van a mutar
         for i in range(poblacion.shape[0]):
             if np.random.random() < self.probabilidad_mutacion:
                 individuo = poblacion.iloc[i]
-                individuo = self.criterio_mutacion.mutar(
+                individuoMutado: Series = self.criterio_mutacion.mutar(
                     individuo, self.dataset)
-                poblacion.iloc[i] = individuo
+                poblacion.iloc[i] = individuoMutado
                 mutaciones += 1
         print("Mutaciones: ", mutaciones)
+        print("Poblacion Final Mutacion: ", poblacion.shape[0])
         return poblacion
 
     def setCriterioSeleccion(self, criterio_seleccion: CriterioSeleccion):
@@ -100,3 +106,6 @@ class AG:
 
     def setCriterioDeParo(self, criterio_de_paro: CriterioDeParo):
         self.criterio_de_paro = criterio_de_paro
+
+    def setCriterioCruzamiento(self, criterio_cruzamiento: CriterioCruzamiento):
+        self.criterio_cruzamiento = criterio_cruzamiento

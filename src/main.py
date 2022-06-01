@@ -1,6 +1,7 @@
 ###### Algoritmo Genético ######
 ###### Seleccion de libros acorde a gustos #########
 
+from Criterios.Cruzamiento.CriterioCruzamiento import CruzaSimple
 from Criterios.Paro.CriterioDeParo import CantidadDeVueltas
 from Stats import Stats
 from utils import stats_poblacion
@@ -15,22 +16,23 @@ import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
 
 
-algoritmoGenetico: AG = AG(probabilidad_mutacion=0.01,
-                           tamanio_subgrupo=50, tamanio_minimo_poblacion=500)
-algoritmoGenetico.setCriterioPoblacionInicial(AlAzar(500))
+algoritmoGenetico: AG = AG(probabilidad_mutacion=0.06,
+                           tamanio_subgrupo=25, tamanio_minimo_poblacion=150)
+algoritmoGenetico.setCriterioPoblacionInicial(AlAzar(150))
 algoritmoGenetico.setCriterioSeleccion(
     Ranking(fraccionamiento=0.5))
-algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(20))
-
-# TODO
-'''
-1. Cambiar funcion de aptitud dependiendo eleccion de usuario
-2. Para la mutacion, pre-ordenar la tabla segun criterios elegidos para eficientizar la busqueda
-3. Cruzamiento de eleccion por individuo distancia media de ambos individuos padres
-
-'''
+algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(100))
 
 stats = Stats()
+
+# TODO
+# 1. Completar precio, cantidad de paginas en el dataset.
+# 2. Crear interfaz por consola para definir funcion aptitud.
+# 3. Implementar 2 criterios de seleccion
+# 4. Implementar 2 criterios de cruzamiento. Mitad de tabla
+# 5. Implementar 2 criterios de paro
+
+
 if __name__ == "__main__":
     poblacion: DataFrame = algoritmoGenetico.getPoblacionInicial(getDataset())
     vuelta = 0
@@ -47,7 +49,3 @@ if __name__ == "__main__":
 
     stats.showStats()
     stats.showPlot()
-    # poblacion.sort_values(
-    #     by=['aptitud'], ascending=False, inplace=True)
-    # print(poblacion[["ID", "titulo", "aptitud"]].head())
-    # print(poblacion[["ID", "titulo", "aptitud"]].tail())

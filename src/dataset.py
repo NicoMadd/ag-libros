@@ -10,6 +10,7 @@ import os
 from dotenv import load_dotenv
 from GoogleAPI import GoogleBooksAPI
 from utils import read_csv
+import random
 
 load_dotenv()
 
@@ -22,15 +23,18 @@ DATA_FILE_PATH = f'{DATA_DIR}/{DATA_FILENAME}'
 def getDatasetFromUrl() -> DataFrame:
     df = pd.read_csv(DATASET_URL)
     df = formatDataset(df)
+    df.sort_values(by=['language', 'titulo', 'genero', 'subgenero', 'autor', 'calificacion', 'publicador',
+                       'likedPercent', 'ID'], inplace=True, ignore_index=True)
     return df
 
 # TODO Normalizar el dataset, obteniendo la informacion que mas nos sirva y clasificandolo
 # segun el documento del genotipo
 
-
 # if genero is NULL then return Nan else return genero
-def formatGeneros(generos: str):
-    return np.NaN if "NULL" in generos else generos
+
+
+def formatGeneros(generos: list, posicion: int):
+    return generos[posicion]
 
 
 def formatDataset(df: DataFrame) -> DataFrame:
@@ -41,11 +45,43 @@ def formatDataset(df: DataFrame) -> DataFrame:
 
     # ID as rowNumber
     df["ID"] = df.index
-    df["generos"] = np.vectorize(formatGeneros)(df["generos"])
-    df["book"] = np.vectorize()
+    df['generos_normalizados'] = df.generos.apply(normalizeGenre)
+    df['genero'] = np.vectorize(formatGeneros)(df["generos_normalizados"], 0)
+    df['subgenero'] = np.vectorize(formatGeneros)(
+        df["generos_normalizados"], 1)
+    df.drop(columns=['generos_normalizados'], inplace=True)
     df["aptitud"] = 0
 
     return df
+
+
+def normalizeGenre(generosDF):
+    generos_normalizados = [['Biopic', ['iography'], ['###@###']], ['Comedia', ['Humor', 'Comedy'], ['###@###']],
+                            ['Ciencia Ficcion', ['Science Fiction'], [
+                                '###@###']], ['Accion', ['Action'], ['###@###']],
+                            ['Western', ['West'], ['Western Africa']], [
+                                'Aventura', ['Adventure'], ['###@###']],
+                            ['Terror/Horror', ['Horror'], ['###@###']], ['Suspenso',
+                                                                         ['Thriller', 'Suspense'], ['###@###']],
+                            ['Policial', ['Crime', 'Police'], ['###@###']
+                             ], ['Misterio', ['Mystery'], ['###@###']],
+                            ['Fantasia', ['Fantas'], ['###@###']
+                             ], ['Epic', ['Epic'], ['###@###']],
+                            ['Guerra', ['War'], ['Warming', 'Warcraft']], [
+        'Romance', ['Romance', 'Love'], ['###@###']],
+        ['Drama', ['Drama'], ['###@###']]]
+    generos_encontrados = list()
+    for normalizado in generos_normalizados:
+        if any((any((buscar in genero) for buscar in normalizado[1]) &
+                (not any((evitar in genero) for evitar in normalizado[2]))) for genero in generosDF.split(',')):
+            generos_encontrados.append(normalizado[0])
+    if len(generos_encontrados) >= 2:
+        return random.sample(generos_encontrados, 2)
+    elif len(generos_encontrados) == 1:
+        generos_encontrados.append('Ninguno')
+        return generos_encontrados
+    else:
+        return ['Ninguno', 'Ninguno']
 
 
 def getDataset() -> DataFrame:

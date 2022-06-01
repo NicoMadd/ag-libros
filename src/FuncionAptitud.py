@@ -1,7 +1,5 @@
 # Esta clase se encarga de construir mediante parametros, ya sean seteados para testear o obtenidos del usuario, para armar la funcion aptitud del calculo de atraccion a un libro/individuo.
 
-from typing import TypeVar
-
 from pandas import Series
 
 
@@ -33,5 +31,8 @@ class FuncionAptitud:
         self.porcentaje_aprobacion = porcentaje_aprobacion
 
     def evaluar(self, individuo: Series) -> float:
-        # Menos letras mayor puntaje, mas letras peor puntaje
-        return individuo.titulo.str.len()
+        # contar vocales en titulo
+        # return individuo["titulo"].str.count("a") + individuo["titulo"].str.count("e") + individuo["titulo"].str.count("i") + individuo["titulo"].str.count("o") + individuo["titulo"].str.count("u")
+
+        # el titulo mas largo
+        return individuo["titulo"].str.len()
