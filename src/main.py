@@ -36,8 +36,7 @@ stats = Stats()
 
 if __name__ == "__main__":
     # Definir propiedades de la funcion aptitud
-    #funcionAptitud = Interfaz().getFuncionAptitud()
-    funcionAptitud = FuncionAptitud()
+    funcionAptitud = Interfaz().getFuncionAptitud()
     algoritmoGenetico.setFuncionAptitud(funcionAptitud)
 
     poblacion: DataFrame = algoritmoGenetico.getPoblacionInicial(getDataset())

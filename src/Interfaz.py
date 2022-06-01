@@ -1,3 +1,4 @@
+from FuncionAptitud import FuncionAptitud
 from dataset import generos, fechas, rangos_de_paginas, precios
 
 
@@ -41,6 +42,7 @@ class Interfaz:
             self.fecha_publicacion = self.selectOption(fechas)
             if self.confirmOptions():
                 break
+        return FuncionAptitud(genero=self.genero, precio=self.precio, cantidad_paginas=self.cantidad_paginas, fecha_publicacion=self.fecha_publicacion)
 
 
 if __name__ == "__main__":

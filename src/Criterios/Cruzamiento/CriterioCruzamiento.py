@@ -8,7 +8,6 @@ import pandas
 # Binomial
 # Mascara
 # Azar
-from src import dataset
 
 
 class CriterioCruzamiento:
