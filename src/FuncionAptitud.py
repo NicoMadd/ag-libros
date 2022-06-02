@@ -18,15 +18,26 @@ class FuncionAptitud:
         self.fecha_publicacion = fecha_publicacion
         self.once = True
 
-    def evaluar(self, individuo: DataFrame) -> Series:
+    # Deberia ser por individuo pero es por subgrupo
+
+    def evaluar(self, individuos: DataFrame) -> Series:
         """
         Evalua la funcion aptitud de un individuo.
 
         por ahora solo hay precio, genero(genero y subgenero), cantidad de paginas y fecha de publicacion
         """
 
-        # return random float series
-        return np.random.normal(0, 100, individuo.shape[0])
+        precios = individuos.precio.apply(lambda x: x == self.precio)
+        fechas = individuos.fechaPublicacion.apply(
+            lambda x: x == self.fecha_publicacion)
+        paginas = individuos.numero_paginas.apply(
+            lambda x: x == self.cantidad_paginas)
+        generosPrincipales = individuos.genero.apply(
+            lambda x: x == self.genero)
+
+        aptitudes = precios.astype(
+            int)*10 + fechas.astype(int)*10 + paginas.astype(int)*10 + generosPrincipales.astype(int)*10
+        return aptitudes
 
         # aptitud = 0
         # if(self.once == True):

@@ -16,13 +16,13 @@ import numpy as np
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
 
-tamanio_minimo_poblacion = 10
+tamanio_minimo_poblacion = 1000
 algoritmoGenetico: AG = AG(probabilidad_mutacion=0.15,
                            tamanio_subgrupo=25, tamanio_minimo_poblacion=tamanio_minimo_poblacion)
 algoritmoGenetico.setCriterioPoblacionInicial(AlAzar(tamanio_minimo_poblacion))
 algoritmoGenetico.setCriterioSeleccion(
     Ranking(fraccionamiento=0.5))
-algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(5))
+algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(50))
 
 stats = Stats()
 
@@ -38,6 +38,7 @@ if __name__ == "__main__":
     # Definir propiedades de la funcion aptitud
     funcionAptitud = Interfaz().getFuncionAptitud()
     algoritmoGenetico.setFuncionAptitud(funcionAptitud)
+    stats.setFunctionAptitud(funcionAptitud)
 
     poblacion: DataFrame = algoritmoGenetico.getPoblacionInicial(getDataset())
     vuelta = 0

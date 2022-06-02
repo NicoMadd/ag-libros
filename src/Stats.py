@@ -1,3 +1,4 @@
+from pickle import NONE
 from pandas import DataFrame
 from FuncionAptitud import FuncionAptitud
 
@@ -12,11 +13,15 @@ class Stats:
         self.corridas = []
         self.mejor = None
         self.peor = None
+        self.funcionAptitud = None
+
+    def setFunctionAptitud(self, funcionAptitud: FuncionAptitud):
+        self.funcionAptitud = funcionAptitud
 
     def saveStats(self, poblacion: DataFrame):
 
         # Calculo funcion de aptitud
-        poblacion["aptitud"] = FuncionAptitud().evaluar(poblacion)
+        poblacion["aptitud"] = self.funcionAptitud.evaluar(poblacion)
 
         # Ordena la poblacion por aptitud
         poblacion.sort_values(by="aptitud", ascending=False, inplace=True)
