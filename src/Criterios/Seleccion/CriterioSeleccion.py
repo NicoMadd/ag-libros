@@ -28,11 +28,22 @@ class CriterioSeleccion:
 
 class Torneo(CriterioSeleccion):
 
-    def __init__(self,  fraccionamiento=0.1) -> None:
+    def __init__(self,  fraccionamiento=0.5) -> None:
         super().__init__(fraccionamiento)
 
     def seleccionar(self, poblacion: DataFrame) -> DataFrame:
-        return poblacion.sample(frac=self.fraccionamiento)
+        # Separa la poblacion en subgrupos de a 2 individuos
+        subgrupos = poblacion.groupby(
+            np.arange(len(poblacion)) // 2)
+
+        # Selecciona el mejor individuo de cada subgrupo
+        df = DataFrame()
+        for _, subgrupo in subgrupos:
+            if subgrupo.shape[0] == 1:
+                df = pd.concat([df, subgrupo.iloc[0:1]])
+            subgrupo = subgrupo.sort_values(by="aptitud", ascending=False)
+            df = pd.concat([df, subgrupo.iloc[0:1]])
+        return df
 
 
 class Ranking(CriterioSeleccion):

@@ -75,7 +75,10 @@ class Stats:
         varianzas = [corrida["varianza"] for corrida in self.corridas]
 
         # selecciona los indices de las generaciones para el grafico
-        x = np.arange(0, len(promedios) + 1, len(promedios) // 5)
+        if len(promedios) < 5:
+            x = np.arange(len(promedios))
+        else:
+            x = np.arange(0, len(promedios) + 1, len(promedios) // 5)
 
         plt.title('Aptitud por Generacion')
         plt.xlabel("Generaciones")

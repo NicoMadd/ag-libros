@@ -39,6 +39,7 @@ class AG:
 
     def getPoblacionInicial(self, dataset: DataFrame) -> DataFrame:
         self.dataset = dataset
+        self.criterio_de_paro.iniciar()
         return self.criterio_poblacion_inicial.samplear(dataset)
 
     def criterioDeParo(self, poblacion: DataFrame) -> bool:
@@ -114,3 +115,6 @@ class AG:
 
     def setCriterioCruzamiento(self, criterio_cruzamiento: CriterioCruzamiento):
         self.criterio_cruzamiento = criterio_cruzamiento
+
+    def setCriterioMutacion(self, criterio_mutacion: CriterioMutacion):
+        self.criterio_mutacion = criterio_mutacion

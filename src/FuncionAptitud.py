@@ -24,19 +24,18 @@ class FuncionAptitud:
     def __str__(self) -> str:
         return "\nIdioma: " + str(self.idioma) + "\nGenero: " + str(self.genero) + "\nPrecio: " + str(self.precio) + "\nCantidad de paginas: " + str(self.cantidad_paginas) + "\nFecha de publicacion: " + str(self.fecha_publicacion)
 
-    def evaluar_buscado_en_conjunto(self, actual: str, conjunto: list, buscado: str, exacto: bool = False, rechazo: float = 0, aceptacion_parcial: float = 0.5) -> float:
+    def evaluar_buscado_en_conjunto(self, actual: str, conjunto: list, buscado: str, exacto: bool = False, rechazo: float = 0, aceptacion_parcial: float = 0.3, aceptacion_total: float = 1) -> float:
         if(buscado is None or actual is None):
-            return rechazo
+            return -rechazo*self.ppc
         try:
             indiceActual = conjunto.index(actual)
         except ValueError as e:
-            return rechazo
+            return -rechazo*self.ppc
         indiceBuscado = conjunto.index(buscado)
         # si es el mismo devuelve ppc, si no se fija si es uno adyacente. Si lo es, devuelve ppc*0.5
-        valor = self.ppc if indiceActual == indiceBuscado else self.ppc * \
+        return self.ppc*aceptacion_total if indiceActual == indiceBuscado else self.ppc * \
             aceptacion_parcial if abs(
-                indiceActual - indiceBuscado) == 1 and exacto is False else rechazo
-        return valor
+                indiceActual - indiceBuscado) == 1 and exacto is False else -rechazo*self.ppc
 
     def evaluar_precios(self, iterado: str) -> float:
         return self.evaluar_buscado_en_conjunto(iterado, ds.precios, self.precio)
@@ -51,7 +50,7 @@ class FuncionAptitud:
         return self.evaluar_buscado_en_conjunto(iterado, ds.generos, self.genero)
 
     def evaluar_idioma(self, iterado: str) -> float:
-        return self.evaluar_buscado_en_conjunto(iterado, ds.idiomas, self.idioma, exacto=True, rechazo=-500)
+        return self.evaluar_buscado_en_conjunto(iterado, ds.idiomas, self.idioma, exacto=True, rechazo=5)
 
     def evaluar(self, individuos: DataFrame) -> Series:
         """
