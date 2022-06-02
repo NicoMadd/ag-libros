@@ -80,7 +80,6 @@ class AG:
                     subgrupo.iloc[0], subgrupo.iloc[1], self.dataset)
                 hijo = hijo.to_frame().T
                 hijo['aptitud'] = self.funcion_aptitud.evaluar(hijo)
-                print("Aptitud: ", hijo['aptitud'])
                 df = pd.concat([df, hijo])
                 tamanio_poblacion += 1
 

@@ -1,6 +1,7 @@
 # Este archivo prepara el dataset para el algoritmo genetico
 
 
+from cmath import nan
 from datetime import date
 import timeit
 import json
@@ -23,28 +24,46 @@ DATA_FILE_PATH = f'{DATA_DIR}/{DATA_FILENAME}'
 
 # Completar si falta alguno
 generos = ['Biopic', 'Comedia', 'Ciencia Ficcion', 'Accion',
-           'Western', 'Policial', 'Misterio', 'Drama', 'Romance', 'Terror']
+           'Western', 'Policial', 'Misterio', 'Drama', 'Romance', 'Terror',
+           'Fantasia', 'Epic', 'Suspenso']
 precios = ['0-1000', '1000-2000', '2000-3000', 'mas de 3000']
 fechas = ['Antes del 2000',
           f'Antes del {date.today().year-10} ', 'Ultima Decada', 'Ultimo Año']
 rangos_de_paginas = ['0-100', '100-300', '300-500', 'mas de 500']
+traducciones = {"Spanish": "Español", "English": "Ingles", "Portuguese": "Portugues", "French": "Frances",
+                "Italian": "Italiano", "German": "Aleman", "Chinese": "Chino", "Japanese": "Japones", "Korean": "Coreano", "Russian": "Ruso"}
+idiomas = list(traducciones.values())
 
 
 def getDatasetFromUrl() -> DataFrame:
     df = pd.read_csv(DATASET_URL)
     df = formatDataset(df)
-    df.sort_values(by=['language', 'titulo', 'genero', 'subgenero', 'autor', 'calificacion', 'publicador',
-                       'likedPercent', 'ID'], inplace=True, ignore_index=True)
+    df.sort_values(by=['idioma', 'genero', 'subgenero', 'precio',
+                   'fechaPublicacion', 'numero_paginas'], inplace=True, ignore_index=True)
     return df
-
-# TODO Normalizar el dataset, obteniendo la informacion que mas nos sirva y clasificandolo
-# segun el documento del genotipo
-
-# if genero is NULL then return Nan else return genero
 
 
 def formatGeneros(generos: list, posicion: int):
     return generos[posicion]
+
+
+def translateIdioma(idioma: str):
+    if idioma in traducciones.keys():
+        return traducciones[idioma]
+    else:
+        idioma = "Otro"
+    return idioma
+
+
+def formatLanguage(language: str):
+    # pick first word
+    try:
+        idioma = language.split(" ")[0].replace(",", "")
+        return translateIdioma(idioma)
+    except IndexError:
+        return "Otro"
+    except AttributeError:
+        return "Otro"
 
 
 def formatDataset(df: DataFrame) -> DataFrame:
@@ -53,7 +72,7 @@ def formatDataset(df: DataFrame) -> DataFrame:
 
     df.drop(columns=['bookId'], inplace=True, axis=1)
     df.rename(inplace=True, columns={
-              'title': 'titulo', 'author': 'autor', 'rating': 'calificacion', 'genres': 'generos', 'publisher': 'publicador', 'likedPercentage': 'porcentaje de aprobacion'})
+              'title': 'titulo', 'author': 'autor', 'rating': 'calificacion', 'genres': 'generos', 'publisher': 'publicador', 'likedPercentage': 'porcentaje de aprobacion', 'language': 'idioma'})
 
     # ID as rowNumber
     df["ID"] = df.index
@@ -77,6 +96,8 @@ def formatDataset(df: DataFrame) -> DataFrame:
     df["numero_paginas"] = pd.Series(np.random.randint(0, 1000, size=len(df)))
     df["numero_paginas"] = np.select([df["numero_paginas"] < 100, df["numero_paginas"]
                                      < 300, df["numero_paginas"] < 500], ["0-100", "100-300", "300-500"], default="mas de 500")
+
+    df["idioma"] = np.vectorize(formatLanguage)(df["idioma"])
 
     df["aptitud"] = 0
 
@@ -128,4 +149,4 @@ if __name__ == "__main__":
     # print(dataset.head())
     # print("size:", dataset.shape[0])
 
-    print(dataset.head())
+    print(dataset["idioma"].unique())

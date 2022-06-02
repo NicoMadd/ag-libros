@@ -1,7 +1,7 @@
 ###### Algoritmo Genético ######
 ###### Seleccion de libros acorde a gustos #########
 
-from Criterios.Cruzamiento.CriterioCruzamiento import CruzaSimple
+from Criterios.Cruzamiento.CriterioCruzamiento import CruzaModular, CruzaSimple
 from Criterios.Paro.CriterioDeParo import CantidadDeVueltas
 from Interfaz import Interfaz
 from Stats import Stats
@@ -16,13 +16,14 @@ import numpy as np
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
 
-tamanio_minimo_poblacion = 1000
-algoritmoGenetico: AG = AG(probabilidad_mutacion=0.15,
+tamanio_minimo_poblacion = 250
+algoritmoGenetico: AG = AG(probabilidad_mutacion=0.5,
                            tamanio_subgrupo=25, tamanio_minimo_poblacion=tamanio_minimo_poblacion)
 algoritmoGenetico.setCriterioPoblacionInicial(AlAzar(tamanio_minimo_poblacion))
 algoritmoGenetico.setCriterioSeleccion(
-    Ranking(fraccionamiento=0.5))
-algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(50))
+    Ranking())
+algoritmoGenetico.setCriterioCruzamiento(CruzaModular())
+algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(25))
 
 stats = Stats()
 

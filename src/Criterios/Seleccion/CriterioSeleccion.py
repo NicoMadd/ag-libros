@@ -37,7 +37,7 @@ class Torneo(CriterioSeleccion):
 
 class Ranking(CriterioSeleccion):
 
-    def __init__(self, fraccionamiento=0.1) -> None:
+    def __init__(self, fraccionamiento=0.5) -> None:
         super().__init__(fraccionamiento)
 
     def seleccionar(self, subgrupo: DataFrame) -> DataFrame:
