@@ -1,12 +1,14 @@
 # Esta clase se encarga de construir mediante parametros, ya sean seteados para testear o obtenidos del usuario, para armar la funcion aptitud del calculo de atraccion a un libro/individuo.
 
+from json import JSONEncoder
 import numpy as np
 from pandas import DataFrame, Series
 
 import dataset as ds
 
 
-class FuncionAptitud:
+class FuncionAptitud():
+
     def __init__(self, autor=None, titulo=None, genero=None, calificacion=None, publicador=None,
                  porcentaje_aprobacion=None, precio=None, cantidad_paginas=None, fecha_publicacion=None, idioma=None):
         self.autor = autor
@@ -50,7 +52,7 @@ class FuncionAptitud:
         return self.evaluar_buscado_en_conjunto(iterado, ds.generos, self.genero)
 
     def evaluar_idioma(self, iterado: str) -> float:
-        return self.evaluar_buscado_en_conjunto(iterado, ds.idiomas, self.idioma, exacto=True, rechazo=5)
+        return self.evaluar_buscado_en_conjunto(iterado, ds.idiomas, self.idioma, exacto=True, rechazo=2.5)
 
     def evaluar(self, individuos: DataFrame) -> Series:
         """
@@ -74,3 +76,13 @@ class FuncionAptitud:
             fechas + paginas + \
             generosPrincipales + generosSecundarios + idioma
         return aptitudes
+
+    def to_dict(self):
+        return {
+
+            "genero": self.genero,
+            "precio": self.precio,
+            "cantidad_paginas": self.cantidad_paginas,
+            "fecha_publicacion": self.fecha_publicacion,
+            "idioma": self.idioma
+        }
