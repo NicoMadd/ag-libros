@@ -22,5 +22,5 @@ class CruzaSimple(CriterioCruzamiento):
 
 class CruzaModular(CriterioCruzamiento):
     def cruzar(self, individuo_1: Series, individuo_2: Series, dataset: DataFrame) -> Series:
-        # retornar iloc del dataset donde el indice sea el promedio entero entre los dosindividuos
+        # retornar iloc del dataset donde el indice sea el promedio entero entre los dos individuos
         return dataset.iloc[int((individuo_1.name + individuo_2.name) / 2)]

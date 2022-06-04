@@ -11,7 +11,8 @@ class Interfaz:
         while True:
             for i, option in enumerate(options):
                 print("{}. {}".format(i + 1, option))
-            print(len(options) + 1, "No Considerar")
+            print("{}. {}".format(len(options) + 1, "No Considerar"))
+            #print(len(options) + 1, "No Considerar")
             label = "Seleccione una opcion: " if title is None else f"Seleccione {title}: "
             option = input(label)
             try:

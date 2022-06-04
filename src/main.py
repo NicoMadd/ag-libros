@@ -2,7 +2,7 @@
 ###### Seleccion de libros acorde a gustos #########
 
 from Criterios.Cruzamiento.CriterioCruzamiento import CruzaModular, CruzaSimple
-from Criterios.Mutacion.CriterioMutacion import MutaSimple
+from Criterios.Mutacion.CriterioMutacion import MutaSimple, MutaOrdenada
 from Criterios.Paro.CriterioDeParo import AptitudMayorA, CantidadDeVueltas, TiempoTranscurrido
 from Interfaz import Interfaz
 from Stats import Stats
@@ -17,18 +17,18 @@ import numpy as np
 import pandas as pd
 pd.options.mode.chained_assignment = None  # default='warn'
 
-tamanio_minimo_poblacion = 250
-algoritmoGenetico: AG = AG(probabilidad_mutacion=0.5,
+tamanio_minimo_poblacion = 200
+algoritmoGenetico: AG = AG(probabilidad_mutacion=0.8,
                            tamanio_subgrupo=25, tamanio_minimo_poblacion=tamanio_minimo_poblacion)
 algoritmoGenetico.setCriterioPoblacionInicial(AlAzar(tamanio_minimo_poblacion))
 # algoritmoGenetico.setCriterioSeleccion(
 #     Ranking())
 algoritmoGenetico.setCriterioSeleccion(Torneo())
 algoritmoGenetico.setCriterioCruzamiento(CruzaModular())
-algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(5))
-algoritmoGenetico.setCriterioMutacion(MutaSimple())
-# algoritmoGenetico.setCriterioDeParo(TiempoTranscurrido(2))
-# algoritmoGenetico.setCriterioDeParo(AptitudMayorA(800))
+# algoritmoGenetico.setCriterioDeParo(CantidadDeVueltas(50))
+algoritmoGenetico.setCriterioMutacion(MutaOrdenada())
+# algoritmoGenetico.setCriterioDeParo(TiempoTranscurrido(120))
+algoritmoGenetico.setCriterioDeParo(AptitudMayorA(900))
 
 stats = Stats()
 

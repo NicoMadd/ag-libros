@@ -21,11 +21,9 @@ DATA_DIR = os.getenv("DATA_DIR")
 DATA_FILENAME = os.getenv("DATA_FILENAME")
 DATA_FILE_PATH = f'{DATA_DIR}/{DATA_FILENAME}'
 
-
-# Completar si falta alguno
-generos = ['Biopic', 'Comedia', 'Ciencia Ficcion', 'Accion',
-           'Western', 'Policial', 'Misterio', 'Drama', 'Romance', 'Terror',
-           'Fantasia', 'Epic', 'Suspenso']
+generos = ['Accion', 'Aventura', 'Biopic', 'Comedia', 'Ciencia Ficcion',
+           'Drama', 'Epic', 'Fantasia', 'Guerra', 'Misterio',
+           'Policial', 'Romance', 'Suspenso', 'Terror', 'Western']
 precios = ['0-1000', '1000-2000', '2000-3000', 'mas de 3000']
 fechas = ['Antes del 2000',
           f'Antes del {date.today().year-10} ', 'Ultima Decada', 'Ultimo Año']
@@ -96,7 +94,6 @@ def formatDataset(df: DataFrame) -> DataFrame:
     df["numero_paginas"] = pd.Series(np.random.randint(0, 1000, size=len(df)))
     df["numero_paginas"] = np.select([df["numero_paginas"] < 100, df["numero_paginas"]
                                      < 300, df["numero_paginas"] < 500], ["0-100", "100-300", "300-500"], default="mas de 500")
-
     df["idioma"] = np.vectorize(formatLanguage)(df["idioma"])
 
     df["aptitud"] = 0
