@@ -1,0 +1,515 @@
+,ID,titulo,aptitud,genero,subgenero,precio,idioma,numero_paginas,fechaPublicacion
+0,2950,The Basketball Diaries,520.0,Drama,Suspenso,0-1000,Ingles,300-500,Antes del 2012 
+1,11472,The Underworld,460.0,Fantasia,Romance,1000-2000,Ingles,mas de 500,Antes del 2000
+2,27971,Born of Blood,400.0,Ninguno,Ninguno,mas de 3000,Ingles,300-500,Antes del 2012 
+3,7803,The Golden Bough,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+4,12705,Witchling,320.0,Fantasia,Romance,0-1000,Ingles,mas de 500,Antes del 2012 
+5,12761,When the Butterflies Came,320.0,Fantasia,Misterio,0-1000,Ingles,100-300,Antes del 2012 
+6,37026,Marrakesh Nights,260.0,Ninguno,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2012 
+7,34067,Riding Rockets: The Outrageous Tales of a Space Shuttle Astronaut,260.0,Biopic,Aventura,mas de 3000,Ingles,mas de 500,Antes del 2012 
+8,16657,Cat Among the Pigeons,460.0,Policial,Suspenso,mas de 3000,Ingles,300-500,Antes del 2000
+9,13674,The Reckoning,400.0,Fantasia,Romance,mas de 3000,Ingles,300-500,Antes del 2012 
+10,13674,The Reckoning,400.0,Fantasia,Romance,mas de 3000,Ingles,300-500,Antes del 2012 
+11,5794,Raven Rise,400.0,Aventura,Ciencia Ficcion,1000-2000,Ingles,0-100,Antes del 2000
+12,15392,Gallows Hill,380.0,Fantasia,Suspenso,0-1000,Ingles,100-300,Antes del 2000
+13,31703,The World of Throne of Glass,320.0,Fantasia,Romance,0-1000,Ingles,mas de 500,Antes del 2012 
+14,21462,If They Cant Take a Joke: Confrontational Humor for the Casual Bibliophile,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2000
+15,8769,Emotional Intelligence 2.0,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+16,50777,The Tanglewoods Secret,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+17,10115,Trumpet,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+18,28549,The Blind Man of Seville,320.0,Misterio,Suspenso,mas de 3000,Ingles,mas de 500,Antes del 2000
+19,5312,The Street Lawyer,260.0,Suspenso,Policial,mas de 3000,Ingles,0-100,Antes del 2012 
+20,1136,The French Lieutenants Woman,260.0,Romance,Ninguno,0-1000,Ingles,0-100,Antes del 2012 
+21,42943,The Misadventures of Maude March,260.0,Comedia,Aventura,mas de 3000,Ingles,mas de 500,Antes del 2012 
+22,18653,On The Intuitive Spectrum: A Deeper Look into the Amazing Value of Intuition,460.0,Ninguno,Ninguno,1000-2000,Ingles,mas de 500,Antes del 2000
+23,16156,The Chant of Jimmie Blacksmith,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+24,25678,How I Paint: Secrets of a Sunday Painter,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+25,28145,A Note in the Margin,320.0,Romance,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+26,4110,Getting Things Done: The Art of Stress-Free Productivity,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+27,46156,An Introduction to the Old Testament,260.0,Ninguno,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2000
+28,39015,The Secret History,260.0,Biopic,Ninguno,0-1000,Ingles,0-100,Antes del 2000
+29,22350,On Having No Head: Zen and the Rediscovery of the Obvious,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+30,11723,Playing James,460.0,Romance,Misterio,1000-2000,Ingles,mas de 500,Antes del 2000
+31,19224,The Cossacks and Other Stories,460.0,Guerra,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+32,31960,Comfort to the Enemy and Other Carl Webster Stories,380.0,Misterio,Suspenso,0-1000,Ingles,mas de 500,Antes del 2012 
+33,51804,This Connection of Everyone With Lungs,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2000
+34,27139,Mudras of India: A Comprehensive Guide to the Hand Gestures of Yoga and Indian Dance,260.0,Ninguno,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2000
+35,21712,Kaddish and Other Poems,260.0,Ninguno,Ninguno,mas de 3000,Ingles,100-300,Antes del 2000
+36,14272,This Book Is Full of Spiders,260.0,Fantasia,Terror/Horror,mas de 3000,Ingles,mas de 500,Antes del 2012 
+37,20261,The Hero Within: Yes You Are Amazing!,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+38,20118,Vanished: The Mysterious Disappearance of Mustafa Ouda,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+39,19153,The Dancing Soul of Fire,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+40,43000,Matchpoints,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+41,12055,Well-Schooled in Murder,320.0,Policial,Misterio,0-1000,Ingles,100-300,Antes del 2012 
+42,35264,The Golden Key,320.0,Romance,Fantasia,2000-3000,Ingles,mas de 500,Antes del 2000
+43,19153,The Dancing Soul of Fire,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+44,48174,The Boy Without a Name,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+45,37850,Poems and Prose,260.0,Ninguno,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2012 
+46,35521,Fragments,260.0,Ninguno,Ninguno,mas de 3000,Ingles,100-300,Antes del 2012 
+47,41562,Last Car to Elysian Fields,260.0,Misterio,Policial,mas de 3000,Ingles,mas de 500,Antes del 2000
+48,21642,"The Leader in Me: How Schools and Parents Around the World Are Inspiring Greatness, One Child At a Time",460.0,Ninguno,Ninguno,2000-3000,Ingles,300-500,Antes del 2012 
+49,30245,Cat of Many Tails,380.0,Misterio,Suspenso,0-1000,Ingles,mas de 500,Antes del 2000
+50,44343,A Pedagogy for Liberation: Dialogues on Transforming Education,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+51,46860,Cains Identity,320.0,Romance,Suspenso,mas de 3000,Ingles,mas de 500,Antes del 2000
+52,6689,Silhouette,320.0,Fantasia,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+53,12249,The Valley of Vision: A Collection of Puritan Prayers and Devotions,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+54,20192,Trouble in Trondheim: Bikers and Gangsters,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+55,9195,The Infernal Devices: Clockwork Prince,320.0,Romance,Fantasia,0-1000,Ingles,mas de 500,Antes del 2012 
+56,44343,A Pedagogy for Liberation: Dialogues on Transforming Education,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+57,40593,Nova,260.0,Ninguno,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2012 
+58,39293,Olivia the Orchid Fairy,460.0,Fantasia,Aventura,0-1000,Ingles,300-500,Antes del 2012 
+59,17738,Open Season,380.0,Misterio,Western,0-1000,Ingles,100-300,Antes del 2000
+60,37429,Gifts and Ministries of the Holy Spirit,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+61,47435,The Haunted House Project,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+62,19693,The Killing Season,260.0,Accion,Policial,mas de 3000,Ingles,mas de 500,Antes del 2000
+63,35131,Her Masters Courtesan,260.0,Policial,Terror/Horror,mas de 3000,Ingles,mas de 500,Antes del 2012 
+64,39680,Oz: Road to Oz,320.0,Fantasia,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+65,35253,Selected Stories of Philip K. Dick,260.0,Fantasia,Ciencia Ficcion,mas de 3000,Ingles,mas de 500,Antes del 2012 
+66,15577,Smart Boys & Fast Girls,320.0,Romance,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+67,46081,Deserter from Death: Dispatches from Western Europe 1950-2000,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+68,17324,A Lost Lady,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+69,19752,In a Glass Grimmly,460.0,Comedia,Terror/Horror,1000-2000,Ingles,mas de 500,Antes del 2012 
+70,41755,Cant Stop Wont Stop: A History of the Hip-Hop Generation,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+71,36503,"Mens Garments, 1830-1900: Guide to Pattern Cutting and Tailoring",320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+72,16805,Afternoon on the Amazon,320.0,Aventura,Fantasia,0-1000,Ingles,mas de 500,Antes del 2012 
+73,20113,A Sisters Promise,320.0,Ninguno,Ninguno,2000-3000,Ingles,mas de 500,Antes del 2012 
+74,12688,Lament for a Son,260.0,Biopic,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2012 
+75,638,A Peoples History of the United States,260.0,Ninguno,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2000
+76,52458,Mission to Asia,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+77,52458,Mission to Asia,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+78,8672,Born in Death,380.0,Romance,Suspenso,0-1000,Ingles,mas de 500,Antes del 2000
+79,33899,The Collected Poems of Frank OHara,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+80,48581,Act of Surrender,320.0,Fantasia,Romance,0-1000,Ingles,mas de 500,Antes del 2012 
+81,19126,The Revelation,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+82,19607,Why I Dont Want To Write This Book,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+83,29873,Capital D: Adult,260.0,Ninguno,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2000
+84,3365,The Notebooks of Malte Laurids Brigge,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+85,33899,The Collected Poems of Frank OHara,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+86,27831,How an Economy Grows and Why It Crashes,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+87,5746,Reservation Blues,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+88,3365,The Notebooks of Malte Laurids Brigge,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+89,20716,The Dinosaur Chronicles,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+90,28900,The Clover Chapel,320.0,Suspenso,Romance,0-1000,Ingles,0-100,Antes del 2012 
+91,43789,Love and War,260.0,Romance,Guerra,mas de 3000,Ingles,mas de 500,Antes del 2000
+92,51709,The Bite Before Christmas,260.0,Fantasia,Romance,mas de 3000,Ingles,mas de 500,Antes del 2012 
+93,21038,"The Holy Bible, Douay-Rheims Version",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+94,42384,No Mans Land: What to Do When Your Company Is Too Big to Be Small but TooSmall to Be Big,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+95,31211,The Dig,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+96,7570,Plantation,400.0,Drama,Romance,mas de 3000,Ingles,300-500,Antes del 2000
+97,33130,"The Other Side of Eden: Hunters, Farmers, and the Shaping of the World",200.0,Ninguno,Ninguno,mas de 3000,Ingles,0-100,Antes del 2000
+98,46378,The Wife,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+99,24798,For a Glory and a Covering: A Practical Theology of Marriage,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+100,39242,The Wolves of Midwinter,320.0,Terror/Horror,Fantasia,0-1000,Ingles,100-300,Antes del 2000
+101,7109,The Fall of Lucifer,320.0,Fantasia,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+102,29979,The House of Love,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2000
+103,48149,What Are Friends For?,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+104,37992,"Pharmako/Poeia: Plant Powers, Poisons, and Herbcraft",320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+105,8253,The Ice Princess,260.0,Misterio,Policial,mas de 3000,Ingles,100-300,Antes del 2012 
+106,49835,Fifth Dispatch,260.0,Ninguno,Ninguno,0-1000,Ingles,0-100,Antes del 2012 
+107,47761,"Trial by Fire: The Hundred Years War, Volume 2",260.0,Guerra,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2012 
+108,47444,Someone at a Distance,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+109,49382,Letters from Rifka,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+110,20621,The Extra-Terrestrial Delivery,460.0,Ninguno,Ninguno,1000-2000,Ingles,100-300,Antes del 2012 
+111,35283,Sweet Madness,380.0,Terror/Horror,Suspenso,0-1000,Ingles,mas de 500,Antes del 2012 
+112,18760,Climb the Mountain,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+113,31532,Adam Buenosayres: A Critical Edition,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+114,21926,The Golden Sky,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+115,32689,The Decline and Fall of the Roman Empire (Volume 1),320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+116,341,The Art of Racing in the Rain,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+117,649,A Wizard of Earthsea,260.0,Aventura,Ciencia Ficcion,mas de 3000,Ingles,mas de 500,Antes del 2012 
+118,14050,Titan,200.0,Ciencia Ficcion,Fantasia,mas de 3000,Ingles,0-100,Antes del 2000
+119,45161,How to Talk So Your Mate Will Listen and Listen So Your Mate Will Talk,200.0,Ninguno,Ninguno,mas de 3000,Ingles,0-100,Antes del 2012 
+120,46346,Muffin (House of Assignation SEries),460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+121,30268,The Witch Doesnt Burn in This One,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+122,18905,A Glimpse of Freedom: An American Tale of Love and War,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+123,29173,Voss,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+124,13837,I Am Not Esther,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+125,9348,The Mezzanine,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+126,38925,The Principal Upanishads,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+127,28060,The Making Of Ajay: Every Man,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+128,11538,Sisterland,260.0,Ninguno,Ninguno,0-1000,Ingles,0-100,Antes del 2012 
+129,49013,The Small House at Allington,260.0,Romance,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2012 
+130,8729,"The Morganville Vampires, Volume 3",200.0,Terror/Horror,Romance,mas de 3000,Ingles,0-100,Antes del 2000
+131,42829,Anxiety,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+132,14824,Matt: the Beginning,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+133,14824,Matt: the Beginning,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+134,585,The Bean Trees,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+135,35773,Fashion and Fiction: Dress in Art and Literature in Stuart England,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+136,3451,The Human Stain,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+137,3903,Astrophysics for People in a Hurry,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+138,24977,"The Infinity Puzzle: How the Quest to Understand Quantum Field Theory Led to Extraordinary Science, High Politics, and the Worlds Most Expensive Experiment",320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+139,39680,Oz: Road to Oz,320.0,Fantasia,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+140,29325,The Prodigal God: Recovering the Heart of the Christian Faith,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+141,16719,The Aquarian Conspiracy,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+142,35915,Invent-10n,460.0,Ninguno,Ninguno,1000-2000,Ingles,mas de 500,Antes del 2000
+143,2967,We Should All Be Feminists,260.0,Ninguno,Ninguno,0-1000,Ingles,0-100,Antes del 2012 
+144,50055,The Underground City,260.0,Ciencia Ficcion,Fantasia,mas de 3000,Ingles,mas de 500,Antes del 2000
+145,4091,Bad Moon Rising,200.0,Fantasia,Romance,mas de 3000,Ingles,0-100,Antes del 2000
+146,33130,"The Other Side of Eden: Hunters, Farmers, and the Shaping of the World",200.0,Ninguno,Ninguno,mas de 3000,Ingles,0-100,Antes del 2000
+147,47583,"Love Songs of Carbon (The Yellow Earl: Almost an Emporer, Not Quite a Gentleman)",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+148,35915,Invent-10n,460.0,Ninguno,Ninguno,1000-2000,Ingles,mas de 500,Antes del 2000
+149,27623,"First Person, Last Straw",320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+150,40676,The Ever After of Ashwin Rao,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+151,12031,Golf Mind Play:Outsmarting your brain to play your best golf.,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+152,40686,We Animals,260.0,Ninguno,Ninguno,mas de 3000,Ingles,100-300,Antes del 2000
+153,15982,"The Masks of God, Volume 3: Occidental Mythology",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+154,44307,The Undiscovered Self,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+155,5371,Creation,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+156,15686,The Second Coming,460.0,Ninguno,Ninguno,1000-2000,Ingles,100-300,Antes del 2000
+157,30588,The Tree of Knowledge: The Biological Roots of Human Understanding,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+158,48900,Donald and His Friends,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+159,10637,Free Will,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+160,39474,Anarchism and Other Essays,260.0,Ninguno,Ninguno,0-1000,Ingles,0-100,Antes del 2012 
+161,39474,Anarchism and Other Essays,260.0,Ninguno,Ninguno,0-1000,Ingles,0-100,Antes del 2012 
+162,22000,Memories from Lawrence,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+163,22000,Memories from Lawrence,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+164,36416,Lit!: A Christian Guide to Reading Books,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+165,11596,I am Morte,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+166,5438,Stepping Heavenward,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+167,48210,Meet Kit: An American Girl 1934,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+168,49801,"The Authority, Vol. 2: Under New Management",320.0,Ciencia Ficcion,Fantasia,0-1000,Ingles,mas de 500,Antes del 2000
+169,18655,Unleashed,260.0,Ninguno,Ninguno,0-1000,Ingles,0-100,Antes del 2012 
+170,34424,The Wander Society,260.0,Aventura,Ninguno,mas de 3000,Ingles,100-300,Antes del 2012 
+171,19447,Because of Twilight,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+172,49998,Arnie Jenks and the House of Strangers,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+173,41434,50 Physics Ideas You Really Need to Know,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+174,47531,Kit Saves the Day: A Summer Story,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+175,18219,Little Tales of Ben & Buckett: Helping in Grandmas Garden,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+176,11596,I am Morte,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+177,15788,Mythos: The Greek Myths Retold,260.0,Ninguno,Ninguno,0-1000,Ingles,0-100,Antes del 2012 
+178,5496,The Code of the Woosters,260.0,Comedia,Ninguno,0-1000,Ingles,0-100,Antes del 2000
+179,745,The Namesake,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+180,23854,A Survey of the New Testament,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+181,43570,Stevens Twin,460.0,Ninguno,Ninguno,1000-2000,Ingles,mas de 500,Antes del 2012 
+182,47124,The New Valley: Novellas,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+183,18284,The Influencing Machine: Brooke Gladstone On The Media,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+184,29138,Kybalion: A Study of the Hermetic Philosophy of Ancient Egypt and Greece,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+185,4023,The Unlikely Pilgrimage of Harold Fry,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+186,43851,Halleys Bible Handbook: With the New International Version,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+187,6278,The Complete Poems,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+188,24662,"Adversity Builds Character; An Inspirational True Life Story of Disability, Addiction and Acceptance",320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+189,8860,Book of Longing,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+190,9498,Crash Lane News,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+191,24584,Anne Hawksmoor: Time in the Tower,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+192,16303,Night Study,320.0,Romance,Fantasia,2000-3000,Ingles,mas de 500,Antes del 2012 
+193,9498,Crash Lane News,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+194,42792,Stormbringer,260.0,Fantasia,Epic,mas de 3000,Ingles,mas de 500,Antes del 2000
+195,18635,The Disintegrating Bloodline Part 1,260.0,Ninguno,Ninguno,0-1000,Ingles,0-100,Antes del 2012 
+196,32132,Cystic Fibrosis: The Ultimate Teen Guide,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+197,11528,Soul to Take,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+198,44595,Everything is Illuminated & Extremely Loud and Incredibly Close,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+199,30340,Nine Notches: The Quadroon Ball Of Lies,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+200,45508,The Story Hour,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+201,30340,Nine Notches: The Quadroon Ball Of Lies,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+202,11322,Science and Health with Key to the Scriptures,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+203,29140,Babygirl,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+204,47753,Long Way Home,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+205,51422,Diana: The Life of a Princess,260.0,Ninguno,Ninguno,0-1000,Ingles,0-100,Antes del 2012 
+206,6224,The Varieties of Scientific Experience: A Personal View of the Search for God,260.0,Ninguno,Ninguno,0-1000,Ingles,0-100,Antes del 2012 
+207,18742,"Counterfeit Gods: The Empty Promises of Money, Sex, and Power, and the Only Hope That Matters",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+208,3111,Life: A Users Manual,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+209,17241,Batman: The Dark Knight Strikes Again,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+210,26775,11 Cheap Diabetic Recipes under 10$ (Bonus! 5 Cheap Diabetic Desserts),460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+211,20583,Sons of Waywould,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+212,21694,Steam Pigs,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+213,2196,Go Tell It on the Mountain,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+214,47083,Meet Kaya,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+215,22684,The Pillow Book of Lotus Lowenstein,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+216,40071,Being Billy,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+217,36015,Race Matters,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+218,36505,Basics of Buddhism: Key principles and how to practise,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+219,42122,Resistance Against Empire,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+220,51937,The Rape of Shavi,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+221,15173,The Anatomy Lesson,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+222,22731,The Fifth Miracle: The Search for the Origin and Meaning of Life,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+223,48525,Amish Friendship Bread (Amish Grace: An Amish of Lancaster County Saga),260.0,Ninguno,Ninguno,0-1000,Ingles,0-100,Antes del 2012 
+224,2019,The Passion,260.0,Romance,Fantasia,mas de 3000,Ingles,mas de 500,Antes del 2012 
+225,30933,The House Of Thirty Cats,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+226,36832,Start With Why: by Simon Sinek | Summary & Analysis,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+227,52414,The Toothpaste Millionaire,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+228,46779,Esthers Gift: A Mitford Christmas Story,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+229,51656,Boredom,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+230,32098,S.O.L.A.D.™: Soldiers of Light Against Darkness™,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+231,4160,The Stupidest Angel: A Heartwarming Tale of Christmas Terror,320.0,Comedia,Fantasia,0-1000,Ingles,mas de 500,Antes del 2000
+232,35578,Surrender Bay,260.0,Romance,Ninguno,0-1000,Ingles,0-100,Antes del 2012 
+233,21994,The Passing of Mother Mary,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+234,16034,The Wanderer,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+235,18136,The Anatomy of Story: 22 Steps to Becoming a Master Storyteller,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+236,31000,Unlocking The Doors Of The Spoken Word (Only The Strong Can Survive),460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+237,47025,Those Extra Chances In Bridge,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+238,46434,The Romance of Names,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+239,22037,google 1649ish: or weltfrieden is possible within 20 minutes,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+240,6056,The Dying Animal,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+241,37032,Moon Crossing Bridge,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+242,39867,"¡Adios, America!: The Lefts Plan to Turn Our Country into a Third World Hellhole",320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+243,16856,Satori In Paris,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+244,22037,google 1649ish: or weltfrieden is possible within 20 minutes,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+245,40040,The Ballad of Reading Gaol and Other Poems,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+246,12763,Inside the OBriens,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+247,8891,The Wisdom of Life,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+248,19074,Sharks,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+249,11409,THE GREAT ACTION,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+250,16055,A Division of the Spoils,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+251,38959,Freedom of Simplicity: Finding Harmony in a Complex World,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+252,13500,"Goodbye, Things: The New Japanese Minimalism",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+253,12391,One of Those Hideous Books Where the Mother Dies,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+254,23669,"Stir, Laugh, Repeat: Finding Joy While Playing in the Kitchen",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+255,43960,The Magic Of Tidying Up: Understand The Secrets Of Good Life,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+256,20022,Dust Fairy Tales: Absolutely Aggie,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+257,41895,The Last Samurai,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+258,49651,The Major Works,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+259,40659,Four Corners,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+260,13523,The Naked Ape: A Zoologists Study of the Human Animal,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+261,7948,The Dante Club,320.0,Policial,Misterio,0-1000,Ingles,100-300,Antes del 2012 
+262,17513,The Romantic Obsessions and Humiliations of Annie Sehlmeier,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2000
+263,25036,Monstrous,320.0,Fantasia,Aventura,0-1000,Ingles,100-300,Antes del 2012 
+264,46844,The Spider,320.0,Romance,Fantasia,0-1000,Ingles,mas de 500,Antes del 2012 
+265,25342,Stealing the Moon: A Womans Quest to Heal the Shadow Self,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+266,8461,Meditation on Space-Time,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+267,38221,She Said!: The Book of Quotes,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+268,3455,To a God Unknown,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+269,51725,The Legend of The Holy Drinker,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+270,27308,The Penguin Lessons,320.0,Biopic,Ninguno,2000-3000,Ingles,mas de 500,Antes del 2000
+271,36680,"Gangsta Girl 3 ""The PayBack""",320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+272,48810,Broken Rib Ranch,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+273,28745,The Foundations of Arithmetic: A Logico-Mathematical Enquiry into the Concept of Number,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+274,42349,Natural Body Scrubs At Home: Exfoliates To Make Your Skin Smooth And Soft,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+275,32726,Patricia Briggs Mercy Thompson: Moon Called,320.0,Fantasia,Romance,0-1000,Ingles,mas de 500,Antes del 2000
+276,36106,A Primal Wisdom: Natures Unifcation of Cooperation and Competition,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+277,22840,Rise of the Necromancers,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+278,23530,Summer of a Thousand Pies,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+279,22105,Penny Flame,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+280,50652,The Mole People: Life in the Tunnels Beneath New York City,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+281,11515,Anne Hawksmoor: The Time Traveller,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+282,11457,A Land Remembered,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+283,8185,The Dhammapada,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+284,5184,Alamut,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+285,43434,The Village,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+286,25922,Tomorrows God: Our Greatest Spiritual Challenge,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+287,36509,Prince: Heir of darkness,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+288,38734,The Defiled and the Second Son,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+289,25817,"We Are Quiet, We Are Loud: The Best Young Writers and Artists In America",320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+290,51457,"Scripture Alone: Exploring the Bibles Accuracy, Authority, and Authenticity",320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+291,43436,Bound,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+292,1054,Germinal,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+293,31919,A Simple Habana Melody,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+294,8958,The Best Short Stories of Edgar Allan Poe,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+295,21794,Forgotten Soldiers (What Happened to Jacob Walden),460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+296,34857,"Ripleys Believe It or Not Encyclopedia of the Bizarre: Amazing, Strange, Inexplicable, Weird and All True!",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+297,43473,Gorillas among Us: A Primate Ethnographer’s Book of Days,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+298,38877,If I Had My Life to Live Over I Would Pick More Daisies,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+299,13115,Pornography: Men Possessing Women,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+300,6775,The Witches of the Glass Castle,260.0,Fantasia,Romance,mas de 3000,Ingles,mas de 500,Antes del 2000
+301,5018,Farmer Boy,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+302,19652,Eternity Awaits,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+303,13462,The Ethics of Ambiguity,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+304,19553,Hadi,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+305,24349,Influencer : The Power to Change Anything,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+306,683,The Book of Mormon: Another Testament of Jesus Christ,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+307,13462,The Ethics of Ambiguity,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+308,42473,"Stormy, Mistys Foal",320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+309,30957,21st Century American,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+310,17292,A Little Bit of Everything For Dummies,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+311,50249,Serves Me Right,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+312,50438,Masterpieces of The Metropolitan Museum of Art,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+313,42037,"Summary of Thinking, Fast and Slow: by Daniel Kahneman | Includes Analysis",320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+314,38819,Great Minds of the Eastern Intellectual Tradition,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+315,30708,Daggers Lust,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+316,44554,The Impossible Question,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+317,26532,Charmed Vengeance,320.0,Ciencia Ficcion,Romance,0-1000,Ingles,mas de 500,Antes del 2012 
+318,30957,21st Century American,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+319,19653,The Dancing Years,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+320,18935,Set my soul on fire,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+321,37459,Night Letters,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+322,562,Being and Time,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+323,21914,The Mis-Education of the Negro,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+324,21718,Recessional for Grace,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+325,22471,Raising the Darkness,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+326,3223,The Feminine Mystique,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+327,25855,Pleasing Him,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+328,48076,End the Fed,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+329,46252,"Good-Bye, Eva?",320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+330,42534,The Helper,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+331,51168,The Power of Parable: How Fiction by Jesus Became Fiction about Jesus,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+332,45074,"Are You Watching, Liverpool?",320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+333,50893,Adopting the Hurt Child: Hope for Families With Special-Needs Kids : A Guide for Parents and Professionals,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+334,48082,Touch of Eternity,320.0,Fantasia,Romance,0-1000,Ingles,mas de 500,Antes del 2012 
+335,36431,The Pine Barrens,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+336,27512,Economic Crisis And Crisis Theory,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+337,5740,The Daughter Of Kurdland: A Life Dedicated to Humankind,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+338,15664,The Stories of Breece DJ Pancake,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+339,28015,Half Brother,260.0,Ninguno,Ninguno,0-1000,Ingles,0-100,Antes del 2000
+340,40843,"Jesus and the Powers: Conflict, Covenant, and the Hope of the Poor",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+341,16935,"Diet for a New America: How Your Food Choices Affect Your Health, Happiness and the Future of Life on Earth",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+342,19246,The Ambitious Madame Bonaparte,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+343,14688,Amal Unbound,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+344,14538,The Dot,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+345,46341,The Nine Lives Of Montezuma,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+346,46283,The Hunter and the Quail,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+347,51996,China Boy,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+348,27514,The Surrounded,320.0,Western,Ninguno,mas de 3000,Ingles,100-300,Antes del 2012 
+349,8963,The Book of Nightmares,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+350,19455,LIVING LA VIDA SPANGLISH,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+351,3874,The View from Saturday,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+352,20507,Illuminati Council and Modern Illuminism,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+353,24991,Pulp Fiction to Film Noir: The Great Depression and the Development of a Genre,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+354,18813,Finding Redemption,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+355,1021,Fall on Your Knees,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+356,6055,Relating Revolution: All It Takes Is One Person To Change,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+357,33088,The 7 Habits of Highly Effective People Personal Workbook,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+358,28340,Im Out to Change My World,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+359,34625,Muhammad: Forty Introductions,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+360,47442,Polished,260.0,Romance,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2000
+361,47442,Polished,260.0,Romance,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2000
+362,10166,The Family Moskat,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+363,8873,City of Night,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+364,35744,The Complete Short Stories of W. Somerset Maugham: The World Over (Vol. 2 of 2),460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+365,12222,Cane,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+366,18375,Mythica: Genesis,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+367,25939,The Future Eaters: An Ecological History of the Australasian Lands and People,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+368,32767,The Question Concerning Technology and Other Essays,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+369,45829,Loves That Bind: A Novel,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+370,47875,The Great Railroad Race: the Diary of Libby West,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+371,42724,He Shall Have Dominion: A Postmillennial Eschatology,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+372,46923,Horaces Compromise: The Dilemma of the American High School,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+373,25181,When Darkness Tries to Hide,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+374,43605,Sweet Little Lies,200.0,Drama,Romance,mas de 3000,Ingles,0-100,Antes del 2012 
+375,8534,Heaven to Betsy,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+376,88,Siddhartha,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+377,30995,Book of Nikah (marriage),460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+378,6698,Book One: Sporadic Memories,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+379,30585,Een Circusjongen: Levensroman,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+380,35863,The Rise of the Forty-seven Percent,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+381,11848,The Culture of Critique: An Evolutionary Analysis of Jewish Involvement in Twentieth-Century Intellectual and Political Movements,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+382,39400,Daybreak: Thoughts on the Prejudices of Morality,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+383,47750,Sarah Moon 12345.,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+384,40054,Debits And Credits,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2000
+385,51158,The House of Desires,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+386,47699,Bad,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+387,44286,Eurotrashed,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+388,30751,Psychic Protection: Creating Positive Energies For People And Places,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+389,3876,The Bastard of Istanbul,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+390,22884,The Road to Somewhere far from Buxton,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+391,2007,"Guns, Germs, and Steel: The Fates of Human Societies",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+392,38931,The Cherry Pit,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+393,15052,The Book of Mirdad: The strange story of a monastery which was once called The Ark,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+394,4130,The Symposium,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+395,19999,18 Cheap Gluten-Free Dessert Recipes (Cheap Gluten-Free Recipes Book 2),460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2000
+396,48870,A Coney Island of the Mind: Poems,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+397,24788,What Would Satan Do?,320.0,Comedia,Fantasia,0-1000,Ingles,100-300,Antes del 2000
+398,42884,Imperium,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+399,43018,Here Before Kilroy,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+400,44347,The Comforters,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+401,48277,Minuk: Ashes in the Pathway,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+402,49976,"Lord, Change Me!",320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+403,24788,What Would Satan Do?,320.0,Comedia,Fantasia,0-1000,Ingles,100-300,Antes del 2000
+404,46127,Quails 101: The Most Asked Questions And Answers On Quail Farming,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+405,1381,The Alexandria Quartet,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+406,610,The Secret,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+407,45251,The Genius of Birds,260.0,Ninguno,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2000
+408,39901,A Mayan Astronomer in Hells Kitchen,260.0,Ninguno,Ninguno,mas de 3000,Ingles,100-300,Antes del 2012 
+409,43846,"The Walking Dead, Vol. 8: Made to Suffer",320.0,Ciencia Ficcion,Terror/Horror,0-1000,Ingles,100-300,Antes del 2000
+410,23065,Remains,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+411,8054,To Have or to Be? The Nature of the Psyche,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+412,10436,Bee Season,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+413,27661,"Meet the Real World, Rachel",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+414,423,The Prince,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+415,1562,"Sarah, Plain and Tall",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+416,19538,The Rising Tide,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+417,9216,Lamb in His Bosom,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+418,20296,The Book of Blots,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+419,26922,The Medusa and the Snail: More Notes of a Biology Watcher,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+420,20374,Lessons from a CF Cornerman: 38 Lessons I Learned During My Wifes Illness And Lung Transplant,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+421,19891,The Boss,460.0,Romance,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+422,51425,Pocket Atlas of Remote Islands: Fifty Islands I Have Not Visited and Never Will,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+423,48238,The Collected Stories of Lewis Carroll: Alice in Wonderland/Through the Looking Glass/Phantasmagoria,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+424,36369,Lars Saabye Christensens Beatles,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+425,18875,The Easiest,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+426,12096,Falling Blood of the Witch,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+427,32608,Loving God,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+428,13544,Ghazals of Ghalib,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+429,14263,Games People Play,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+430,21327,Raja-Vidya: The King of Knowledge,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+431,33294,"The Awakening Land: The Trees, The Fields, & The Town",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+432,18306,Hazardous Choices,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+433,9066,Luv Ya Bunches,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+434,35066,Falling From the Tree,460.0,Romance,Fantasia,1000-2000,Ingles,mas de 500,Antes del 2012 
+435,5362,The Prose Edda,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+436,44144,The Total Money Makeover Workbook,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+437,49148,The Pre-Platonic Philosophers (INS),320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+438,38929,So Long a Letter,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+439,38373,Let it Come Down,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+440,41022,Where We Stand: Class Matters,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+441,43398,Islam In The World,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+442,22195,The Student Prince,260.0,Romance,Fantasia,mas de 3000,Ingles,100-300,Antes del 2012 
+443,16358,Noli Me Tángere Touch Me Not,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+444,14912,If God Is Love: Rediscovering Grace in an Ungracious World,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+445,15605,Rubyfruit Jungle,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+446,23143,Calico,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+447,16901,Twilight of the Idols,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+448,22233,I Like You Just Because: Thoughts on Friendship,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+449,22633,Forbidden Friends,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+450,508,The God Delusion,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+451,22360,Eye Contact,380.0,Suspenso,Misterio,0-1000,Ingles,mas de 500,Antes del 2000
+452,23932,Just Like Heaven,320.0,Romance,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+453,47996,Joseph Had a Little Overcoat,320.0,Comedia,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+454,16480,The Presidents Daughter,260.0,Ninguno,Ninguno,mas de 3000,Ingles,mas de 500,Antes del 2012 
+455,21382,The Book About Blanche and Marie,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+456,17107,Self-Reliance and Other Essays,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+457,20252,Signs of Life: 40 Catholic Customs and Their Biblical Roots,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+458,41648,Bringing it to the Table: On Farming and Food,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+459,20183,The Secret Message of Jesus: Uncovering the Truth That Could Change Everything,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+460,20215,The Forest Kings Daughter,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+461,26472,The Kings of Angkor: Army of a Thousand Elephants,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+462,14859,Andy Goldsworthy: A Collaboration with Nature,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+463,30378,Notes from an Exhibition,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+464,6828,Tilt,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+465,15794,Introductory Lectures on Psychoanalysis,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+466,30033,Shadows of the Inferno,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+467,2867,Maniac Magee,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+468,11963,Torture the Artist,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+469,35301,When I Was a Child I Read Books: Essays,460.0,Biopic,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+470,468,The Waste Land,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+471,17778,"Individual Power: Reclaiming Your Core, Your Truth and Your Life",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+472,36015,Race Matters,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+473,15113,The Quest for Christa T.,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+474,32076,Strategic Management: Concepts and Cases,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+475,28392,Mysteries of the Red Coyote Inn,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+476,11595,Big Bang: The Origin of the Universe,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+477,18707,The Gurkhas Daughter: Stories,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+478,31762,Fierce People,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+479,19905,The Voice of Jamaica,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+480,22525,Give and Take: A Revolutionary Approach to Success,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+481,25083,The Light Keepers Daughter,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+482,19635,Conspiracy,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+483,31762,Fierce People,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+484,18852,Bits and Pieces: Tales and Sonnets,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+485,3091,Women Who Run With the Wolves: Myths and Stories of the Wild Woman Archetype,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+486,3132,"The End of Faith: Religion, Terror, and the Future of Reason",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+487,2042,Tortilla Flat,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+488,22630,"Story Engineering: Character Development, Story Concept, Scene Construction",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+489,11612,Glory,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+490,22201,The Golden Moonbeam,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+491,11760,Deadly Games,460.0,Misterio,Aventura,1000-2000,Ingles,mas de 500,Antes del 2012 
+492,19303,The Ring,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+493,10353,Krik? Krak!,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+494,88,Siddhartha,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+495,168,The Good Earth,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+496,51560,$20 Per Gallon: How the Inevitable Rise in the Price of Gasoline Will Change Our Lives for the Better,320.0,Ninguno,Ninguno,0-1000,Ingles,100-300,Antes del 2012 
+497,31694,The Book of Pleasure (Self-Love): The Psychology of Ecstasy,320.0,Ninguno,Ninguno,0-1000,Ingles,mas de 500,Antes del 2012 
+498,13707,Antichrista,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+499,34934,The Collected Poems,260.0,Ninguno,Ninguno,mas de 3000,Ingles,100-300,Antes del 2012 
+500,10569,Shalimar the Clown,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+501,1997,As a Man Thinketh,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+502,16078,Understanding Power: The Indispensable Chomsky,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+503,8301,"Leadership: Past, Present & Future",460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+504,8344,Moment(s),460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+505,10723,The House of the Dead,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+506,3233,To Have and Have Not,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+507,7278,The Edible Woman,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+508,21589,A Survey of the Old Testament,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+509,19165,Postcards from a Rock and Roll Tour,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+510,2997,Freak the Mighty,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+511,42347,The Wounded Land,320.0,Ciencia Ficcion,Fantasia,2000-3000,Ingles,mas de 500,Antes del 2000
+512,19894,Desire of the Moth,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
+513,19716,Song to the Moon,460.0,Ninguno,Ninguno,0-1000,Ingles,300-500,Antes del 2012 
