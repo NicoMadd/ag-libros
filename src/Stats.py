@@ -145,5 +145,20 @@ class Stats:
 
 if __name__ == "__main__":
 
-    s = Series([1, 2,  4, 5, 6, 8, 9])
-    print(s.quantile(0.75, interpolation="midpoint"))
+    # recorre archivos de carpeta stats
+    for file in os.listdir("../stats"):
+        content = json.load(open("../stats/" + file))
+        corridas = content["corridas"]
+
+        dfMain = pandas.DataFrame()
+        for index, corrida in enumerate(corridas):
+            mejor = corrida["mejor"]
+            peor = corrida["peor"]
+            # add mejor and peor to df
+            df = pandas.DataFrame([mejor, peor], columns=["ID", "titulo", "aptitud", "genero",
+                                  "subgenero", "precio", "idioma", "numero_paginas", "fechaPublicacion"])
+            df.set_index("ID", inplace=True)
+            df["corrida"] = index
+            dfMain = pandas.concat([dfMain, df])
+
+        dfMain.to_csv("../stats/" + file.replace(".json", ".csv"))
