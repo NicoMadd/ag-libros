@@ -1,1 +1,329 @@
-{"corridas": [{"mejor": {"ID": 838, "titulo": "A Connecticut Yankee in King Arthurs Court", "aptitud": 800.0, "genero": "Aventura", "subgenero": "Comedia", "precio": "1000-2000", "idioma": "Ingles", "numero_paginas": "100-300", "fechaPublicacion": "Antes del 2012 "}, "peor": {"ID": 51521, "titulo": "CINCO HISTORIAS De Animales Te Cuento: VAROLES MORALES / ENSE\u00d1ANZA PARA LA VIDA", "aptitud": -440.0, "genero": "Ninguno", "subgenero": "Ninguno", "precio": "mas de 3000", "idioma": "Otro", "numero_paginas": "mas de 500", "fechaPublicacion": "Antes del 2000"}, "promedio": {"aptitud": 376.42857142857144}, "lowerQuartile": {"aptitud": 320.0}, "upperQuartile": {"aptitud": 520.0}, "varianza": 62757.09165386584}, {"mejor": {"ID": 26375, "titulo": "The Various Haunts of Men", "aptitud": 860, "genero": "Misterio", "subgenero": "Suspenso", "precio": "1000-2000", "idioma": "Ingles", "numero_paginas": "100-300", "fechaPublicacion": "Antes del 2012 "}, "peor": {"ID": 30226, "titulo": "Poesia - II", "aptitud": -440, "genero": "Ninguno", "subgenero": "Ninguno", "precio": "mas de 3000", "idioma": "Portugues", "numero_paginas": "mas de 500", "fechaPublicacion": "Antes del 2000"}, "promedio": {"aptitud": 358.67088607594934}, "lowerQuartile": {"aptitud": 320.0}, "upperQuartile": {"aptitud": 520.0}, "varianza": 79219.81514968857}, {"mejor": {"ID": 26375, "titulo": "The Various Haunts of Men", "aptitud": 860.0, "genero": "Misterio", "subgenero": "Suspenso", "precio": "1000-2000", "idioma": "Ingles", "numero_paginas": "100-300", "fechaPublicacion": "Antes del 2012 "}, "peor": {"ID": 51521, "titulo": "CINCO HISTORIAS De Animales Te Cuento: VAROLES MORALES / ENSE\u00d1ANZA PARA LA VIDA", "aptitud": -440.0, "genero": "Ninguno", "subgenero": "Ninguno", "precio": "mas de 3000", "idioma": "Otro", "numero_paginas": "mas de 500", "fechaPublicacion": "Antes del 2000"}, "promedio": {"aptitud": 375.45454545454544}, "lowerQuartile": {"aptitud": 320.0}, "upperQuartile": {"aptitud": 520.0}, "varianza": 66114.62150017284}, {"mejor": {"ID": 26375, "titulo": "The Various Haunts of Men", "aptitud": 860.0, "genero": "Misterio", "subgenero": "Suspenso", "precio": "1000-2000", "idioma": "Ingles", "numero_paginas": "100-300", "fechaPublicacion": "Antes del 2012 "}, "peor": {"ID": 21724, "titulo": "El sue\u00f1o creador", "aptitud": -380.0, "genero": "Ninguno", "subgenero": "Ninguno", "precio": "0-1000", "idioma": "Espa\u00f1ol", "numero_paginas": "mas de 500", "fechaPublicacion": "Antes del 2000"}, "promedio": {"aptitud": 376.38225255972696}, "lowerQuartile": {"aptitud": 320.0}, "upperQuartile": {"aptitud": 520.0}, "varianza": 65845.771190799}, {"mejor": {"ID": 36744, "titulo": "Last of the Amazons", "aptitud": 920.0, "genero": "Fantasia", "subgenero": "Guerra", "precio": "2000-3000", "idioma": "Ingles", "numero_paginas": "100-300", "fechaPublicacion": "Antes del 2012 "}, "peor": {"ID": 32157, "titulo": "Honorine", "aptitud": -440.0, "genero": "Romance", "subgenero": "Ninguno", "precio": "mas de 3000", "idioma": "Otro", "numero_paginas": "mas de 500", "fechaPublicacion": "Antes del 2000"}, "promedio": {"aptitud": 386.46153846153845}, "lowerQuartile": {"aptitud": 320.0}, "upperQuartile": {"aptitud": 520.0}, "varianza": 73729.72459639126}], "aptos": {"35720": {"ID": 32452, "titulo": "Wishing for a Highlander", "aptitud": 520.0, "genero": "Romance", "subgenero": "Fantasia", "precio": "1000-2000", "idioma": "Ingles", "numero_paginas": "mas de 500", "fechaPublicacion": "Antes del 2000"}, "12475": {"ID": 32452, "titulo": "Wishing for a Highlander", "aptitud": 520.0, "genero": "Romance", "subgenero": "Fantasia", "precio": "1000-2000", "idioma": "Ingles", "numero_paginas": "mas de 500", "fechaPublicacion": "Antes del 2000"}, "19543": {"ID": 50023, "titulo": "Dust", "aptitud": 500.0, "genero": "Misterio", "subgenero": "Fantasia", "precio": "0-1000", "idioma": "Ingles", "numero_paginas": "300-500", "fechaPublicacion": "Antes del 2000"}, "16114": {"ID": 35069, "titulo": "Her Dragon To Slay", "aptitud": 380.0, "genero": "Fantasia", "subgenero": "Romance", "precio": "0-1000", "idioma": "Ingles", "numero_paginas": "mas de 500", "fechaPublicacion": "Antes del 2000"}, "30380": {"ID": 39567, "titulo": "The Book of the Sword", "aptitud": 580.0, "genero": "Aventura", "subgenero": "Fantasia", "precio": "0-1000", "idioma": "Ingles", "numero_paginas": "100-300", "fechaPublicacion": "Antes del 2000"}, "10627": {"ID": 39567, "titulo": "The Book of the Sword", "aptitud": 580.0, "genero": "Aventura", "subgenero": "Fantasia", "precio": "0-1000", "idioma": "Ingles", "numero_paginas": "100-300", "fechaPublicacion": "Antes del 2000"}, "25455": {"ID": 19653, "titulo": "The Dancing Years", "aptitud": 520.0, "genero": "Ninguno", "subgenero": "Ninguno", "precio": "0-1000", "idioma": "Ingles", "numero_paginas": "300-500", "fechaPublicacion": "Antes del 2012 "}, "17911": {"ID": 41251, "titulo": "Young Woman Personal Progress", "aptitud": 460.0, "genero": "Ninguno", "subgenero": "Ninguno", "precio": "mas de 3000", "idioma": "Ingles", "numero_paginas": "100-300", "fechaPublicacion": "Antes del 2000"}, "24477": {"ID": 41880, "titulo": "Collected Shorter Plays", "aptitud": 320.0, "genero": "Drama", "subgenero": "Ninguno", "precio": "0-1000", "idioma": "Ingles", "numero_paginas": "mas de 500", "fechaPublicacion": "Antes del 2000"}, "24746": {"ID": 39006, "titulo": "Crystal", "aptitud": 600.0, "genero": "Romance", "subgenero": "Ninguno", "precio": "mas de 3000", "idioma": "Ingles", "numero_paginas": "100-300", "fechaPublicacion": "Antes del 2012 "}, "28211": {"ID": 22083, "titulo": "The Uprising", "aptitud": 460.0, "genero": "Ninguno", "subgenero": "Ninguno", "precio": "2000-3000", "idioma": "Ingles", "numero_paginas": "mas de 500", "fechaPublicacion": "Antes del 2012 "}, "21172": {"ID": 48989, "titulo": "Night of the Grizzlies", "aptitud": 380.0, "genero": "Aventura", "subgenero": "Policial", "precio": "0-1000", "idioma": "Ingles", "numero_paginas": "0-100", "fechaPublicacion": "Antes del 2000"}, "31643": {"ID": 14974, "titulo": "Topdog/Underdog", "aptitud": 660.0, "genero": "Drama", "subgenero": "Ninguno", "precio": "0-1000", "idioma": "Ingles", "numero_paginas": "100-300", "fechaPublicacion": "Antes del 2012 "}, "21318": {"ID": 24517, "titulo": "A Gradual Awakening", "aptitud": 260.0, "genero": "Ninguno", "subgenero": "Ninguno", "precio": "mas de 3000", "idioma": "Ingles", "numero_paginas": "mas de 500", "fechaPublicacion": "Antes del 2000"}, "26090": {"ID": 45011, "titulo": "Caging Skies", "aptitud": 100.0, "genero": "Drama", "subgenero": "Guerra", "precio": "mas de 3000", "idioma": "Otro", "numero_paginas": "100-300", "fechaPublicacion": "Antes del 2012 "}, "17459": {"ID": 45011, "titulo": "Caging Skies", "aptitud": 100.0, "genero": "Drama", "subgenero": "Guerra", "precio": "mas de 3000", "idioma": "Otro", "numero_paginas": "100-300", "fechaPublicacion": "Antes del 2012 "}}, "funcionAptitud": {"genero": "Guerra", "precio": "1000-2000", "cantidad_paginas": "100-300", "fecha_publicacion": "Antes del 2012 ", "idioma": "Ingles"}}
+{
+    "corridas": [
+        {
+            "mejor": {
+                "ID": 838,
+                "titulo": "A Connecticut Yankee in King Arthurs Court",
+                "aptitud": 800.0,
+                "genero": "Aventura",
+                "subgenero": "Comedia",
+                "precio": "1000-2000",
+                "idioma": "Ingles",
+                "numero_paginas": "100-300",
+                "fechaPublicacion": "Antes del 2012 "
+            },
+            "peor": {
+                "ID": 51521,
+                "titulo": "CINCO HISTORIAS De Animales Te Cuento: VAROLES MORALES / ENSE\u00d1ANZA PARA LA VIDA",
+                "aptitud": -440.0,
+                "genero": "Ninguno",
+                "subgenero": "Ninguno",
+                "precio": "mas de 3000",
+                "idioma": "Otro",
+                "numero_paginas": "mas de 500",
+                "fechaPublicacion": "Antes del 2000"
+            },
+            "promedio": { "aptitud": 376.42857142857144 },
+            "lowerQuartile": { "aptitud": 320.0 },
+            "upperQuartile": { "aptitud": 520.0 },
+            "varianza": 62757.09165386584
+        },
+        {
+            "mejor": {
+                "ID": 26375,
+                "titulo": "The Various Haunts of Men",
+                "aptitud": 860,
+                "genero": "Misterio",
+                "subgenero": "Suspenso",
+                "precio": "1000-2000",
+                "idioma": "Ingles",
+                "numero_paginas": "100-300",
+                "fechaPublicacion": "Antes del 2012 "
+            },
+            "peor": {
+                "ID": 30226,
+                "titulo": "Poesia - II",
+                "aptitud": -440,
+                "genero": "Ninguno",
+                "subgenero": "Ninguno",
+                "precio": "mas de 3000",
+                "idioma": "Portugues",
+                "numero_paginas": "mas de 500",
+                "fechaPublicacion": "Antes del 2000"
+            },
+            "promedio": { "aptitud": 358.67088607594934 },
+            "lowerQuartile": { "aptitud": 320.0 },
+            "upperQuartile": { "aptitud": 520.0 },
+            "varianza": 79219.81514968857
+        },
+        {
+            "mejor": {
+                "ID": 26375,
+                "titulo": "The Various Haunts of Men",
+                "aptitud": 860.0,
+                "genero": "Misterio",
+                "subgenero": "Suspenso",
+                "precio": "1000-2000",
+                "idioma": "Ingles",
+                "numero_paginas": "100-300",
+                "fechaPublicacion": "Antes del 2012 "
+            },
+            "peor": {
+                "ID": 51521,
+                "titulo": "CINCO HISTORIAS De Animales Te Cuento: VAROLES MORALES / ENSE\u00d1ANZA PARA LA VIDA",
+                "aptitud": -440.0,
+                "genero": "Ninguno",
+                "subgenero": "Ninguno",
+                "precio": "mas de 3000",
+                "idioma": "Otro",
+                "numero_paginas": "mas de 500",
+                "fechaPublicacion": "Antes del 2000"
+            },
+            "promedio": { "aptitud": 375.45454545454544 },
+            "lowerQuartile": { "aptitud": 320.0 },
+            "upperQuartile": { "aptitud": 520.0 },
+            "varianza": 66114.62150017284
+        },
+        {
+            "mejor": {
+                "ID": 26375,
+                "titulo": "The Various Haunts of Men",
+                "aptitud": 860.0,
+                "genero": "Misterio",
+                "subgenero": "Suspenso",
+                "precio": "1000-2000",
+                "idioma": "Ingles",
+                "numero_paginas": "100-300",
+                "fechaPublicacion": "Antes del 2012 "
+            },
+            "peor": {
+                "ID": 21724,
+                "titulo": "El sue\u00f1o creador",
+                "aptitud": -380.0,
+                "genero": "Ninguno",
+                "subgenero": "Ninguno",
+                "precio": "0-1000",
+                "idioma": "Espa\u00f1ol",
+                "numero_paginas": "mas de 500",
+                "fechaPublicacion": "Antes del 2000"
+            },
+            "promedio": { "aptitud": 376.38225255972696 },
+            "lowerQuartile": { "aptitud": 320.0 },
+            "upperQuartile": { "aptitud": 520.0 },
+            "varianza": 65845.771190799
+        },
+        {
+            "mejor": {
+                "ID": 36744,
+                "titulo": "Last of the Amazons",
+                "aptitud": 920.0,
+                "genero": "Fantasia",
+                "subgenero": "Guerra",
+                "precio": "2000-3000",
+                "idioma": "Ingles",
+                "numero_paginas": "100-300",
+                "fechaPublicacion": "Antes del 2012 "
+            },
+            "peor": {
+                "ID": 32157,
+                "titulo": "Honorine",
+                "aptitud": -440.0,
+                "genero": "Romance",
+                "subgenero": "Ninguno",
+                "precio": "mas de 3000",
+                "idioma": "Otro",
+                "numero_paginas": "mas de 500",
+                "fechaPublicacion": "Antes del 2000"
+            },
+            "promedio": { "aptitud": 386.46153846153845 },
+            "lowerQuartile": { "aptitud": 320.0 },
+            "upperQuartile": { "aptitud": 520.0 },
+            "varianza": 73729.72459639126
+        }
+    ],
+    "aptos": {
+        "35720": {
+            "ID": 32452,
+            "titulo": "Wishing for a Highlander",
+            "aptitud": 520.0,
+            "genero": "Romance",
+            "subgenero": "Fantasia",
+            "precio": "1000-2000",
+            "idioma": "Ingles",
+            "numero_paginas": "mas de 500",
+            "fechaPublicacion": "Antes del 2000"
+        },
+        "12475": {
+            "ID": 32452,
+            "titulo": "Wishing for a Highlander",
+            "aptitud": 520.0,
+            "genero": "Romance",
+            "subgenero": "Fantasia",
+            "precio": "1000-2000",
+            "idioma": "Ingles",
+            "numero_paginas": "mas de 500",
+            "fechaPublicacion": "Antes del 2000"
+        },
+        "19543": {
+            "ID": 50023,
+            "titulo": "Dust",
+            "aptitud": 500.0,
+            "genero": "Misterio",
+            "subgenero": "Fantasia",
+            "precio": "0-1000",
+            "idioma": "Ingles",
+            "numero_paginas": "300-500",
+            "fechaPublicacion": "Antes del 2000"
+        },
+        "16114": {
+            "ID": 35069,
+            "titulo": "Her Dragon To Slay",
+            "aptitud": 380.0,
+            "genero": "Fantasia",
+            "subgenero": "Romance",
+            "precio": "0-1000",
+            "idioma": "Ingles",
+            "numero_paginas": "mas de 500",
+            "fechaPublicacion": "Antes del 2000"
+        },
+        "30380": {
+            "ID": 39567,
+            "titulo": "The Book of the Sword",
+            "aptitud": 580.0,
+            "genero": "Aventura",
+            "subgenero": "Fantasia",
+            "precio": "0-1000",
+            "idioma": "Ingles",
+            "numero_paginas": "100-300",
+            "fechaPublicacion": "Antes del 2000"
+        },
+        "10627": {
+            "ID": 39567,
+            "titulo": "The Book of the Sword",
+            "aptitud": 580.0,
+            "genero": "Aventura",
+            "subgenero": "Fantasia",
+            "precio": "0-1000",
+            "idioma": "Ingles",
+            "numero_paginas": "100-300",
+            "fechaPublicacion": "Antes del 2000"
+        },
+        "25455": {
+            "ID": 19653,
+            "titulo": "The Dancing Years",
+            "aptitud": 520.0,
+            "genero": "Ninguno",
+            "subgenero": "Ninguno",
+            "precio": "0-1000",
+            "idioma": "Ingles",
+            "numero_paginas": "300-500",
+            "fechaPublicacion": "Antes del 2012 "
+        },
+        "17911": {
+            "ID": 41251,
+            "titulo": "Young Woman Personal Progress",
+            "aptitud": 460.0,
+            "genero": "Ninguno",
+            "subgenero": "Ninguno",
+            "precio": "mas de 3000",
+            "idioma": "Ingles",
+            "numero_paginas": "100-300",
+            "fechaPublicacion": "Antes del 2000"
+        },
+        "24477": {
+            "ID": 41880,
+            "titulo": "Collected Shorter Plays",
+            "aptitud": 320.0,
+            "genero": "Drama",
+            "subgenero": "Ninguno",
+            "precio": "0-1000",
+            "idioma": "Ingles",
+            "numero_paginas": "mas de 500",
+            "fechaPublicacion": "Antes del 2000"
+        },
+        "24746": {
+            "ID": 39006,
+            "titulo": "Crystal",
+            "aptitud": 600.0,
+            "genero": "Romance",
+            "subgenero": "Ninguno",
+            "precio": "mas de 3000",
+            "idioma": "Ingles",
+            "numero_paginas": "100-300",
+            "fechaPublicacion": "Antes del 2012 "
+        },
+        "28211": {
+            "ID": 22083,
+            "titulo": "The Uprising",
+            "aptitud": 460.0,
+            "genero": "Ninguno",
+            "subgenero": "Ninguno",
+            "precio": "2000-3000",
+            "idioma": "Ingles",
+            "numero_paginas": "mas de 500",
+            "fechaPublicacion": "Antes del 2012 "
+        },
+        "21172": {
+            "ID": 48989,
+            "titulo": "Night of the Grizzlies",
+            "aptitud": 380.0,
+            "genero": "Aventura",
+            "subgenero": "Policial",
+            "precio": "0-1000",
+            "idioma": "Ingles",
+            "numero_paginas": "0-100",
+            "fechaPublicacion": "Antes del 2000"
+        },
+        "31643": {
+            "ID": 14974,
+            "titulo": "Topdog/Underdog",
+            "aptitud": 660.0,
+            "genero": "Drama",
+            "subgenero": "Ninguno",
+            "precio": "0-1000",
+            "idioma": "Ingles",
+            "numero_paginas": "100-300",
+            "fechaPublicacion": "Antes del 2012 "
+        },
+        "21318": {
+            "ID": 24517,
+            "titulo": "A Gradual Awakening",
+            "aptitud": 260.0,
+            "genero": "Ninguno",
+            "subgenero": "Ninguno",
+            "precio": "mas de 3000",
+            "idioma": "Ingles",
+            "numero_paginas": "mas de 500",
+            "fechaPublicacion": "Antes del 2000"
+        },
+        "26090": {
+            "ID": 45011,
+            "titulo": "Caging Skies",
+            "aptitud": 100.0,
+            "genero": "Drama",
+            "subgenero": "Guerra",
+            "precio": "mas de 3000",
+            "idioma": "Otro",
+            "numero_paginas": "100-300",
+            "fechaPublicacion": "Antes del 2012 "
+        },
+        "17459": {
+            "ID": 45011,
+            "titulo": "Caging Skies",
+            "aptitud": 100.0,
+            "genero": "Drama",
+            "subgenero": "Guerra",
+            "precio": "mas de 3000",
+            "idioma": "Otro",
+            "numero_paginas": "100-300",
+            "fechaPublicacion": "Antes del 2012 "
+        }
+    },
+    "funcionAptitud": {
+        "genero": "Guerra",
+        "precio": "1000-2000",
+        "cantidad_paginas": "100-300",
+        "fecha_publicacion": "Antes del 2012 ",
+        "idioma": "Ingles"
+    }
+}

@@ -148,53 +148,17 @@ if __name__ == "__main__":
     # recorre archivos de carpeta stats
     for file in os.listdir("../stats"):
         content = json.load(open("../stats/" + file))
-        # corridas = content["corridas"]
-        aptos = content["aptos"]
-        ids = []
-        titulos = []
-        aptitudes = []
-        generos = []
-        subgeneros = []
-        precios = []
-        idiomas = []
-        numero_paginas = []
-        fechaPublicacion = []
+        corridas = content["corridas"]
 
-        # get ID to Series
-        for index in aptos.keys():
-            apto = aptos[index]
-            ids.append(apto["ID"])
-            titulos.append(apto["titulo"])
-            aptitudes.append(apto["aptitud"])
-            generos.append(apto["genero"])
-            subgeneros.append(apto["subgenero"])
-            precios.append(apto["precio"])
-            idiomas.append(apto["idioma"])
-            numero_paginas.append(apto["numero_paginas"])
-            fechaPublicacion.append(apto["fechaPublicacion"])
-        sids = pandas.Series(ids)
-        stitulos = pandas.Series(titulos)
-        saptitudes = pandas.Series(aptitudes)
-        sgeneros = pandas.Series(generos)
-        ssubgeneros = pandas.Series(subgeneros)
-        sprecios = pandas.Series(precios)
-        sidiomas = pandas.Series(idiomas)
-        snumero_paginas = pandas.Series(numero_paginas)
-        sfechaPublicacion = pandas.Series(fechaPublicacion)
+        dfMain = pandas.DataFrame()
+        for index, corrida in enumerate(corridas):
+            mejor = corrida["mejor"]
+            peor = corrida["peor"]
+            # add mejor and peor to df
+            df = pandas.DataFrame([mejor, peor], columns=["ID", "titulo", "aptitud", "genero",
+                                  "subgenero", "precio", "idioma", "numero_paginas", "fechaPublicacion"])
+            df.set_index("ID", inplace=True)
+            df["corrida"] = index
+            dfMain = pandas.concat([dfMain, df])
 
-        # create dataframe
-        poblacion = pandas.DataFrame(
-            {
-                "ID": sids,
-                "titulo": stitulos,
-                "aptitud": saptitudes,
-                "genero": sgeneros,
-                "subgenero": ssubgeneros,
-                "precio": sprecios,
-                "idioma": sidiomas,
-                "numero_paginas": snumero_paginas,
-                "fechaPublicacion": sfechaPublicacion
-            }
-        )
-
-        poblacion.to_csv("../stats/" + file + ".csv")
+        dfMain.to_csv("../stats/" + file.replace(".json", ".csv"))
