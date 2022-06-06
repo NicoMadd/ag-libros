@@ -145,5 +145,56 @@ class Stats:
 
 if __name__ == "__main__":
 
-    s = Series([1, 2,  4, 5, 6, 8, 9])
-    print(s.quantile(0.75, interpolation="midpoint"))
+    # recorre archivos de carpeta stats
+    for file in os.listdir("../stats"):
+        content = json.load(open("../stats/" + file))
+        # corridas = content["corridas"]
+        aptos = content["aptos"]
+        ids = []
+        titulos = []
+        aptitudes = []
+        generos = []
+        subgeneros = []
+        precios = []
+        idiomas = []
+        numero_paginas = []
+        fechaPublicacion = []
+
+        # get ID to Series
+        for index in aptos.keys():
+            apto = aptos[index]
+            ids.append(apto["ID"])
+            titulos.append(apto["titulo"])
+            aptitudes.append(apto["aptitud"])
+            generos.append(apto["genero"])
+            subgeneros.append(apto["subgenero"])
+            precios.append(apto["precio"])
+            idiomas.append(apto["idioma"])
+            numero_paginas.append(apto["numero_paginas"])
+            fechaPublicacion.append(apto["fechaPublicacion"])
+        sids = pandas.Series(ids)
+        stitulos = pandas.Series(titulos)
+        saptitudes = pandas.Series(aptitudes)
+        sgeneros = pandas.Series(generos)
+        ssubgeneros = pandas.Series(subgeneros)
+        sprecios = pandas.Series(precios)
+        sidiomas = pandas.Series(idiomas)
+        snumero_paginas = pandas.Series(numero_paginas)
+        sfechaPublicacion = pandas.Series(fechaPublicacion)
+
+        # create dataframe
+        poblacion = pandas.DataFrame(
+            {
+                "ID": sids,
+                "titulo": stitulos,
+                "aptitud": saptitudes,
+                "genero": sgeneros,
+                "subgenero": ssubgeneros,
+                "precio": sprecios,
+                "idioma": sidiomas,
+                "numero_paginas": snumero_paginas,
+                "fechaPublicacion": sfechaPublicacion
+            }
+        )
+
+        poblacion.to_csv("../stats/" + file + ".csv")
